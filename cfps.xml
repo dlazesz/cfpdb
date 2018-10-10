@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE confs SYSTEM "cfps.dtd">
+<?xml-stylesheet type="text/xsl" href="cfps_plain.xsl.xml"?>
+<confs>
+<separator text="Lesz..."/><conf>
+  <name>MSZNY 2019</name>
+  <begin date="2019-01-24"/>
+  <end date="2019-01-25"/>
+  <location>Szeged</location>
+  <submission date="2018-11-15" alert="yes"/>
+  <notification date="2018-12-14"/>
+  <cameraready date="2019-01-06"/>
+  <homepage url="https://tinyurl.com/ycunl9yb"/>
+  <remark>...</remark>
+</conf>
+<conf>
+  <name>NAACL 2019</name>
+  <begin date="2019-06-02"/>
+  <end date="2019-06-07"/>
+  <location>Minneapolis, USA</location>
+  <submission date="2018-12-03" alert="yes"/>
+  <notification date="2019-02-22"/>
+  <cameraready date="2019-04-01"/>
+  <homepage url="http://naacl2019.org"/>
+  <remark>...</remark>
+</conf>
+<conf>
+  <name>eLexicography 2019</name>
+  <begin date="2019-10-01"/>
+  <end date="2019-10-03"/>
+  <location>Sintra, Portugal</location>
+  <submission date="2019-02-15" alert="yes"/>
+  <notification date=""/>
+  <cameraready date=""/>
+  <homepage url="https://elex.link"/>
+  <remark>...</remark>
+</conf>
+<conf>
+  <name>TSD 2019</name>
+  <begin date="2019-09-xx"/>
+  <end date="2019-09-xx"/>
+  <location>Ljubljana, Slovenia</location>
+  <submission date="2019-03-xx" alert="yes"/>
+  <notification date=""/>
+  <cameraready date=""/>
+  <homepage url="https://www.tsdconference.org/tsd2019"/>
+  <remark>...</remark>
+</conf>
+<conf>
+  <name>ACL 2019</name>
+  <begin date="2019-07-28"/>
+  <end date="2019-08-02"/>
+  <location>Florence, Italy</location>
+  <submission date="2019-xx-xx" alert="yes"/>
+  <notification date=""/>
+  <cameraready date=""/>
+  <homepage url="http://www.acl2019.org"/>
+  <remark>...</remark>
+</conf>
+<separator text="Volt..."/><conf>
+  <name>TSD 2018</name>
+  <begin date="2018-09-11"/>
+  <end date="2018-09-14"/>
+  <location>Brno</location>
+  <submission date="2018-03-15"/>
+  <notification date="2018-05-16"/>
+  <cameraready date="2018-05-31"/>
+  <homepage url="http://www.tsdconference.org"/>
+  <remark>...</remark>
+</conf>
+<conf>
+  <name>COLING 2018</name>
+  <begin date="2018-08-20"/>
+  <end date="2018-08-25"/>
+  <location>Santa Fe, New Mexico</location>
+  <submission date="2018-03-16"/>
+  <notification date=""/>
+  <cameraready date=""/>
+  <homepage url="http://coling2018.org"/>
+  <remark>...</remark>
+</conf>
+</confs>

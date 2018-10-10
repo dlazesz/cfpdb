@@ -1,0 +1,5 @@
+conf.*.xml
+*.swp
+INFO
+old
+cfp.db

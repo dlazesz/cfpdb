@@ -1,0 +1,30 @@
+
+<!ELEMENT confs         (conf|separator)+>
+<!ELEMENT conf          (name, begin, end, location,
+                         submission, notification, cameraready,
+                         homepage, remark)>
+<!ELEMENT name          (#PCDATA)>
+<!ELEMENT begin         EMPTY>
+<!ELEMENT end           EMPTY>
+<!ELEMENT location      (#PCDATA)>
+<!ELEMENT submission    EMPTY>
+<!ELEMENT notification  EMPTY>
+<!ELEMENT cameraready   EMPTY>
+<!ELEMENT homepage      EMPTY>
+<!ELEMENT remark        (#PCDATA)>
+<!ELEMENT separator     EMPTY>
+
+<!ATTLIST begin         date CDATA #REQUIRED
+                        alert ( yes | no ) "no">
+<!ATTLIST end           date CDATA #REQUIRED
+                        alert ( yes | no ) "no">
+<!ATTLIST submission    date CDATA #REQUIRED
+                        alert ( yes | no ) "no">
+<!ATTLIST notification  date CDATA #REQUIRED
+                        alert ( yes | no ) "no">
+<!ATTLIST cameraready   date CDATA #REQUIRED
+                        alert ( yes | no ) "no">
+<!ATTLIST homepage      url  CDATA #REQUIRED>
+
+<!ATTLIST separator     text CDATA #REQUIRED>
+
