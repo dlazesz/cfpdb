@@ -162,6 +162,11 @@ def print_html(confs, out_stream=sys.stdout):
           sep='\n', file=out_stream)
 
 
-conferences = load_yaml('conferences.yaml')
-sorted_conferences = sort_confs(conferences)
-print_html(sorted_conferences)
+def main():
+	conferences = load_yaml('conferences.yaml')
+	sorted_conferences = sort_confs(conferences)
+	print_html(sorted_conferences, open('cfps.html', 'w', encoding='UTF-8'))
+
+
+if __name__ == '__main__':
+	main()
