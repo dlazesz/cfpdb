@@ -140,18 +140,18 @@ def print_html(confs, out_stream=sys.stdout):
 
     # Header
     print('<html>',
-          '<title>Számítógépes nyelvészet konferenciák</title>',
+          '<title>Natural Language Processing (NLP) and Computational Linguistics (CL) Conferences</title>',
           '<body style="font-family: Verdana, Helvetica, sans-serif; margin: 1em; width: 780px">',
           sep='\n', file=out_stream)
 
     if len(future_confs) > 0:
-        print('<span style="font-size: larger; font-weight: bold">Lesz...</span>', file=out_stream)
+        print('<span style="font-size: larger; font-weight: bold">Upcoming...</span>', file=out_stream)
 
     for pos, (name, data) in enumerate(future_confs, start=1):
         print_conf(pos, name, data, out_stream)
 
     if len(past_confs) > 0:
-        print('<span style="font-size: larger; font-weight: bold">Volt...</span>', file=out_stream)
+        print('<span style="font-size: larger; font-weight: bold">Past...</span>', file=out_stream)
 
     for pos, (name, data) in enumerate(past_confs, start=len(future_confs)+1):
         print_conf(pos, name, data, out_stream)
