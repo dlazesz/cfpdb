@@ -1,0 +1,98 @@
+#!/bin/sh
+# -*- coding: utf-8, vim: expandtab:ts=4 -*-
+# The origin of the idea of 'runable yaml': https://gist.github.com/corvax19/5661251
+python3 -c '
+import yaml
+import sys
+try:
+    yaml.load(sys.stdin)
+except yaml.YAMLError as exc:
+    if hasattr(exc, 'problem_mark'):
+        shifting = 17  # Line no. where "%YAML 1.1" is! (Numbering starts from 0!)
+        exc.problem_mark.line += shifting
+        exc.context_mark.line += shifting
+    print("Syntax error: {0}".format(exc))
+    sys.exit(1)
+print("Syntax OK!")
+'<<EOF
+%YAML 1.1
+---
+COLING 2018:
+    start: 2018-08-20
+    end:   2018-08-25
+    location: Santa Fe, New Mexico
+    submission:   2018-03-16
+    notification: ???
+    camera-ready: ???
+    url: http://coling2018.org
+    remark: |
+
+TSD 2018:
+    start: 2018-09-11
+    end:   2018-09-14
+    location: Brno
+    submission:   2018-03-15
+    notification: 2018-05-16
+    camera-ready: 2018-05-31
+    url: http://www.tsdconference.org
+    remark: |
+        absztrakt: 03-15 -- full paper: 03-22 (!) XXX :)
+        esetleg a hálót angolul ide? Benyomtam, elfogadták! (!) XXX :)
+
+MSZNY 2019:
+    start: 2019-01-24
+    end:   2019-01-25
+    location: Szeged
+    submission:   2018-11-15
+    notification: 2018-12-14
+    camera-ready: 2019-01-06
+    url: https://tinyurl.com/ycunl9yb
+    remark: |
+        ez kell: háló impl! (!) XXX :) + vmi algókezdemény vele! :)
+
+NAACL 2019:
+    start: 2019-06-02
+    end:   2019-06-07
+    location: Minneapolis, USA
+    submission:   2018-12-03
+    notification: 2019-02-22
+    camera-ready: 2019-04-01
+    url: http://naacl2019.org
+    remark: |
+
+ACL 2019:
+    start: 2019-07-28
+    end:   2019-08-02
+    location: Florence, Italy
+    submission:   2019-xx-xx
+    notification: ???
+    camera-ready: ???
+    url: http://www.acl2019.org
+    remark: |
+        ez kell: háló impl! (!) XXX :) + vmi algókezdemény vele! :)
+
+eLexicography 2019:
+    start: 2019-10-01
+    end:   2019-10-03
+    location: Sintra, Portugal
+    submission:   2019-02-15
+    notification: ???
+    camera-ready: ???
+    url: https://elex.link
+    remark: |
+        itt is mehetnék a 10 éves évfordulóra, mint a TSD esetében! :)
+        természetesen az (implemenált!) háló lexikográfiai alkalmazásával! :)
+
+TSD 2019:
+    start: 2019-09-xx
+    end:   2019-09-xx
+    location: Ljubljana, Slovenia
+    submission:   2019-03-xx
+    notification: ???
+    camera-ready: ???
+    url: https://www.tsdconference.org/tsd2019
+    remark: |
+        postert utsó pillanatban is be lehet adni, lehet work in progress :)
+        viszont külön van, és a proceedingsbe se kerül bele... :)
+...
+EOF
