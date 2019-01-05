@@ -11,6 +11,8 @@ import yaml
 
 # Secondary sorting key order...
 event_order = ('submission', 'notification', 'camera-ready', 'start')
+far_past = date.today().replace(year=date.today().year-10)
+far_future = date.today().replace(year=date.today().year+10)
 
 
 def load_yaml(cfg_file):
@@ -63,8 +65,6 @@ def correct_date(value, far_future):
 
 def sort_confs(confs):
     curr_date = date.today()
-    far_past = date.today().replace(year=date.today().year-10)
-    far_future = date.today().replace(year=date.today().year+10)
     events = {event: i for i, event in enumerate(event_order)}
     fields = [field for field, _ in sorted(events.items(), key=itemgetter(1))]  # Sorted for stability
 
@@ -99,14 +99,15 @@ def sort_confs(confs):
     return past_confs, future_confs
 
 
-def format_alert(sort_date, due_date):
+def format_alert(sort_date, due_date, color, alert):
     formatted_field = str(due_date)
-    if sort_date == due_date:
-        formatted_field = '<span style="background: #ffd0d0">{0}</span>'.format(due_date)
-    return formatted_field
+    if alert and sort_date.startswith(str(correct_date(due_date, far_future))):
+        alert = False
+        formatted_field = '<span style="background: {0}">{1}</span>'.format(color, due_date)
+    return formatted_field, alert
 
 
-def print_conf(pos, name, data, out_stream=sys.stdout):
+def print_conf(pos, name, data, out_stream=sys.stdout, alert=False):
     background = ''
     if pos % 2 == 0:
         background = 'background: #f4f4f4'
@@ -115,15 +116,16 @@ def print_conf(pos, name, data, out_stream=sys.stdout):
     if len(data['url']) > 0:
         name_formatted = '<a href="{0}">{1}</a>'.format(data['url'], name_formatted)
 
-    begin = format_alert(data['sort_date'], data['start'])
+    begin, alert = format_alert(data['sort_date'], data['start'], '#d0f0d0', alert)
 
     end = ''
     if data['start'] != data['end']:
-        end = ' – {0}'.format(format_alert(data['sort_date'], data['end']))
+        end, alert = format_alert(data['sort_date'], data['end'], '#d0f0d0', alert)
+        end = ' – {0}'.format(end)
 
-    submission = format_alert(data['sort_date'], data['submission'])
-    notification = format_alert(data['sort_date'], data['notification'])
-    camera_ready = format_alert(data['sort_date'], data['camera-ready'])
+    submission, alert = format_alert(data['sort_date'], data['submission'], '#ffd0d0', alert)
+    notification, alert = format_alert(data['sort_date'], data['notification'], '#f8f8d0', alert)
+    camera_ready, alert = format_alert(data['sort_date'], data['camera-ready'], '#d0f0d0', alert)
 
     print('<div style="margin-bottom: 0.5em;{0}">{1}({2}{3}, <a href="http://maps.google.com/maps?q={4}">{4}</a>)'
           .format(background, name_formatted, begin, end, data['location']),
@@ -148,7 +150,7 @@ def print_html(confs, out_stream=sys.stdout):
         print('<span style="font-size: larger; font-weight: bold">Upcoming...</span>', file=out_stream)
 
     for pos, (name, data) in enumerate(future_confs, start=1):
-        print_conf(pos, name, data, out_stream)
+        print_conf(pos, name, data, out_stream, alert=True)
 
     if len(past_confs) > 0:
         print('<span style="font-size: larger; font-weight: bold">Past...</span>', file=out_stream)
@@ -162,11 +164,11 @@ def print_html(confs, out_stream=sys.stdout):
           sep='\n', file=out_stream)
 
 
-def main():
-	conferences = load_yaml('conferences.yaml')
-	sorted_conferences = sort_confs(conferences)
-	print_html(sorted_conferences, open('cfps.html', 'w', encoding='UTF-8'))
+def main(inp='conferences.yaml', out='cfps.html'):
+    conferences = load_yaml(inp)
+    sorted_conferences = sort_confs(conferences)
+    print_html(sorted_conferences, open(out, 'w', encoding='UTF-8'))
 
 
 if __name__ == '__main__':
-	main()
+    main(sys.argv[1], sys.argv[2])
