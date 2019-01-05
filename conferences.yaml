@@ -17,29 +17,7 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
-COLING 2018:
-    start: 2018-08-20
-    end:   2018-08-25
-    location: Santa Fe, New Mexico
-    submission:   2018-03-16
-    notification: ???
-    camera-ready: ???
-    url: http://coling2018.org
-    remark: |
-
-TSD 2018:
-    start: 2018-09-11
-    end:   2018-09-14
-    location: Brno
-    submission:   2018-03-15
-    notification: 2018-05-16
-    camera-ready: 2018-05-31
-    url: http://www.tsdconference.org
-    remark: |
-        absztrakt: 03-15 -- full paper: 03-22 (!) XXX :)
-        esetleg a hálót angolul ide? Benyomtam, elfogadták! (!) XXX :)
-
-MSZNY 2019:
+"MSZNY 2019":
     start: 2019-01-24
     end:   2019-01-25
     location: Szeged
@@ -48,20 +26,64 @@ MSZNY 2019:
     camera-ready: 2019-01-06
     url: https://tinyurl.com/ycunl9yb
     remark: |
-        ez kell: háló impl! (!) XXX :) + vmi algókezdemény vele! :)
+        ...
 
-MWE WS 2019:
-    start: 2019-08-02
-    end:   2019-08-02
-    location: Florence, Italy
-    submission:   2019-04-26
-    notification: 2019-05-24
-    camera-ready: 2019-06-03
-    url: http://multiword.sourceforge.net/mwewn2019
+"CICLing 2019":
+    start: 2019-04-07
+    end:   2019-04-13
+    location: La Rochelle
+    submission:   2019-01-10
+    notification: 2019-02-20
+    camera-ready: 2019-03-01
+    url: https://www.cicling.org
     remark: |
-        teszt!
+        ...
 
-NAACL 2019:
+"Corpus Linguistics 2019":
+    start: 2019-07-22
+    end:   2019-07-26
+    location: Cardiff, Wales
+    submission:   2019-01-14
+    notification: 2019-02-14
+    camera-ready: 
+    url: http://www.cl2019.org
+    remark: |
+        ...
+
+"ICSH 14":
+    start: 2019-06-11
+    end:   2019-06-12
+    location: Potsdam, Germany
+    submission:   2019-01-15
+    notification: 2019-03-15
+    camera-ready: 
+    url: https://easychair.org/conferences/?conf=icsh14
+    remark: |
+        ...
+
+"9th LTC":
+    start: 2019-05-17
+    end:   2019-05-19
+    location: Poznan
+    submission:   2019-02-04
+    notification: 2019-03-14
+    camera-ready: 2019-04-02
+    url: http://ltc.amu.edu.pl
+    remark: |
+        ...
+
+"eLexicography 2019":
+    start: 2019-10-01
+    end:   2019-10-03
+    location: Sintra, Portugal
+    submission:   2019-02-15
+    notification: 
+    camera-ready: 
+    url: https://elex.link
+    remark: |
+        ...
+
+"NAACL 2019":
     start: 2019-06-02
     end:   2019-06-07
     location: Minneapolis, USA
@@ -70,40 +92,1018 @@ NAACL 2019:
     camera-ready: 2019-04-01
     url: http://naacl2019.org
     remark: |
+        ...
 
-ACL 2019:
+"ACL 2019":
     start: 2019-07-28
     end:   2019-08-02
     location: Florence, Italy
-    submission:   2019-xx-xx
-    notification: ???
-    camera-ready: ???
+    submission:   2019-03-04
+    notification: 2019-05-13
+    camera-ready: 2019-06-03
     url: http://www.acl2019.org
     remark: |
-        ez kell: háló impl! (!) XXX :) + vmi algókezdemény vele! :)
+        ...
 
-eLexicography 2019:
-    start: 2019-10-01
-    end:   2019-10-03
-    location: Sintra, Portugal
-    submission:   2019-02-15
-    notification: ???
-    camera-ready: ???
-    url: https://elex.link
-    remark: |
-        itt is mehetnék a 10 éves évfordulóra, mint a TSD esetében! :)
-        természetesen az (implemenált!) háló lexikográfiai alkalmazásával! :)
-
-TSD 2019:
+"TSD 2019":
     start: 2019-09-xx
     end:   2019-09-xx
     location: Ljubljana, Slovenia
-    submission:   2019-03-xx
-    notification: ???
-    camera-ready: ???
+    submission:   2019-03-31
+    notification: 2019-05-10
+    camera-ready: 2019-05-31
     url: https://www.tsdconference.org/tsd2019
     remark: |
-        postert utsó pillanatban is be lehet adni, lehet work in progress :)
-        viszont külön van, és a proceedingsbe se kerül bele... :)
+        ...
+
+"MWE WS 2019":
+    start: 2019-08-02
+    end:   2019-08-02
+    location: Florence, Italy
+    submission:   2019-04-26
+    notification: 2019-05-24
+    camera-ready: 2019-06-03
+    url: http://multiword.sourceforge.net/mwewn2019
+    remark: |
+        ...
+
+"RANLP 2019":
+    start: 2019-08-31
+    end:   2019-09-06
+    location: Varna, Bulgaria
+    submission:   2019-04-xx
+    notification: 2019-06-26
+    camera-ready: 2019-07-31
+    url: http://lml.bas.bg/ranlp2019
+    remark: |
+        ...
+
+"NoDaLiDa 2019":
+    start: 2019-09-30
+    end:   2019-10-02
+    location: Turku, Finland
+    submission:   2019-05-31
+    notification: 2019-07-12
+    camera-ready: 
+    url: http://www.nodalida2019.org
+    remark: |
+        ...
+
+"LREC 2020":
+    start: 2020-05-xx
+    end:   2020-05-xx
+    location: XX
+    submission:   2019-10-xx
+    notification: 
+    camera-ready: 
+    url: http://www.lrec-conf.org
+    remark: |
+        ...
+
+"TSD 2018":
+    start: 2018-09-11
+    end:   2018-09-14
+    location: Brno
+    submission:   2018-03-15
+    notification: 2018-05-16
+    camera-ready: 2018-05-31
+    url: http://www.tsdconference.org
+    remark: |
+        ...
+
+"20. Élőnyelvi Konferencia":
+    start: 2018-08-30
+    end:   2018-09-01
+    location: Budapest
+    submission:   2018-01-15
+    notification: 2018-02-12
+    camera-ready: 
+    url: http://www.nytud.hu/elonyelvi20
+    remark: |
+        ...
+
+"COLING 2018":
+    start: 2018-08-20
+    end:   2018-08-25
+    location: Santa Fe, New Mexico
+    submission:   2018-03-16
+    notification: 
+    camera-ready: 
+    url: http://coling2018.org
+    remark: |
+        ...
+
+"EURALEX 2018":
+    start: 2018-07-17
+    end:   2018-07-21
+    location: Ljubljana, Slovenia
+    submission:   2017-12-01
+    notification: 
+    camera-ready: 
+    url: http://euralex2018.cjvt.si
+    remark: |
+        ...
+
+"ACL 2018":
+    start: 2018-07-15
+    end:   2018-07-20
+    location: Melbourne
+    submission:   201x-xx-xx
+    notification: 
+    camera-ready: 
+    url: http://acl2018.org
+    remark: |
+        ...
+
+"NAACL 2018":
+    start: 2018-06-01
+    end:   2018-06-06
+    location: New Orleans, Louisiana
+    submission:   2017-12-15
+    notification: 
+    camera-ready: 
+    url: http://naacl2018.org
+    remark: |
+        ...
+
+"DUCOG 2018":
+    start: 2018-05-24
+    end:   2018-05-27
+    location: Dubrovnik
+    submission:   2018-02-28
+    notification: 
+    camera-ready: 
+    url: http://www.cecog.eu/ducog/page_invitation.php
+    remark: |
+        ...
+
+"LREC 2018":
+    start: 2018-05-07
+    end:   2018-05-12
+    location: Miyazaki, Japan
+    submission:   2017-10-02
+    notification: 
+    camera-ready: 
+    url: http://lrec2018.lrec-conf.org
+    remark: |
+        ...
+
+"CICLing 2018":
+    start: 2018-03-18
+    end:   2018-03-24
+    location: Hanoi, Vietnam
+    submission:   2018-01-05
+    notification: 
+    camera-ready: 
+    url: http://www.cicling.org/2018
+    remark: |
+        ...
+
+"CRH 2018 Corpus-based Res in Hum WS":
+    start: 2018-01-25
+    end:   2018-01-26
+    location: Vienna
+    submission:   2017-10-15
+    notification: 
+    camera-ready: 
+    url: http://www.oeaw.ac.at/ac/crh2
+    remark: |
+        ...
+
+"MSZNY 2018":
+    start: 2018-01-18
+    end:   2018-01-19
+    location: Szeged
+    submission:   2017-11-24
+    notification: 
+    camera-ready: 
+    url: http://rgai.inf.u-szeged.hu/index.php?lang=hu&amp;page=mszny2018
+    remark: |
+        ...
+
+"EUROPHRAS 2017":
+    start: 2017-11-13
+    end:   2017-11-14
+    location: London
+    submission:   
+    notification: 
+    camera-ready: 
+    url: http://rgcl.wlv.ac.uk/europhras2017
+    remark: |
+        ...
+
+"Össznyelvész Konf":
+    start: 2017-11-10
+    end:   2017-11-10
+    location: ELTE
+    submission:   2017-10-29
+    notification: 
+    camera-ready: 
+    url: https://ossznyelvesz.elte.hu
+    remark: |
+        ...
+
+"Nyelvelmélet és dialektológia 4. A Károli Biblia nyelve":
+    start: 2017-10-17
+    end:   2017-10-18
+    location: Budapest
+    submission:   2017-07-10
+    notification: 2017-07-30
+    camera-ready: 
+    url: 
+    remark: |
+        ...
+
+"IWCS 2017":
+    start: 2017-09-19
+    end:   2017-09-22
+    location: Montpellier
+    submission:   2017-04-15
+    notification: 
+    camera-ready: 
+    url: http://www.lirmm.fr/iwcs2017
+    remark: |
+        ...
+
+"eLexicography 2017":
+    start: 2017-09-19
+    end:   2017-09-21
+    location: Leiden, Netherlands
+    submission:   2017-02-15
+    notification: 2017-03-15
+    camera-ready: 
+    url: https://elex.link/elex2017
+    remark: |
+        ...
+
+"4th Intl Conf on Dependency Linguistics":
+    start: 2017-09-18
+    end:   2017-09-20
+    location: Pisa, Italy
+    submission:   2017-05-05
+    notification: 
+    camera-ready: 
+    url: http://depling.org/depling2017
+    remark: |
+        ...
+
+"EMNLP 2017":
+    start: 2017-09-07
+    end:   2017-09-11
+    location: Copenhagen, Denmark
+    submission:   2017-04-14
+    notification: 2017-06-30
+    camera-ready: 2017-07-21
+    url: http://emnlp2017.net
+    remark: |
+        ...
+
+"26th ICOS Intl. Congress of Onomastic Sciences":
+    start: 2017-08-27
+    end:   2017-09-01
+    location: Debrecen
+    submission:   2016-11-30
+    notification: 
+    camera-ready: 
+    url: 
+    remark: |
+        ...
+
+"TSD 2017":
+    start: 2017-08-27
+    end:   2017-08-31
+    location: Prague
+    submission:   2017-03-31
+    notification: 2017-05-10
+    camera-ready: 2017-05-31
+    url: http://www.kiv.zcu.cz/tsd2017
+    remark: |
+        ...
+
+"ACL 2017":
+    start: 2017-07-30
+    end:   2017-08-04
+    location: Vancouver, Canada
+    submission:   2017-02-06
+    notification: 2017-03-30
+    camera-ready: 2017-04-22
+    url: http://acl2017.org
+    remark: |
+        ...
+
+"EACL 2017 WS: Shared task on VMWEs":
+    start: 2017-04-xx
+    end:   2017-04-xx
+    location: Valencia, Spain
+    submission:   2017-01-27
+    notification: 2017-02-12
+    camera-ready: 2017-02-19
+    url: http://tinyurl.com/z8jw923
+    remark: |
+        ...
+
+"EACL 2017 (long paper)":
+    start: 2017-04-03
+    end:   2017-04-07
+    location: Valencia, Spain
+    submission:   2016-09-30
+    notification: 2016-12-02
+    camera-ready: 2017-01-10
+    url: http://eacl2017.org
+    remark: |
+        ...
+
+"EACL 2017 (short paper)":
+    start: 2017-04-03
+    end:   2017-04-07
+    location: Valencia, Spain
+    submission:   2016-12-16
+    notification: 2017-02-01
+    camera-ready: 2017-02-10
+    url: http://eacl2017.org
+    remark: |
+        ...
+
+"Role of Constituents in Multi-Word Expressions WS":
+    start: 2017-03-08
+    end:   2017-03-10
+    location: Saarbrücken, Germany
+    submission:   2016-09-01
+    notification: 2016-09-13
+    camera-ready: 2016-09-30
+    url: http://www.ims.uni-stuttgart.de/events/dgfs-mwe-17
+    remark: |
+        ...
+
+"MSZNY 2017":
+    start: 2017-01-26
+    end:   2017-01-27
+    location: Szeged
+    submission:   2016-11-20
+    notification: 2016-12-12
+    camera-ready: 2017-01-02
+    url: http://rgai.inf.u-szeged.hu/index.php?lang=hu&amp;page=mszny2017
+    remark: |
+        ...
+
+"EMNLP 2016":
+    start: 2016-11-03
+    end:   2016-11-05
+    location: Austin, Texas
+    submission:   2016-06-03
+    notification: 2016-07-10
+    camera-ready: 
+    url: http://www.emnlp2016.net
+    remark: |
+        ...
+
+"ACL 2016 (short paper)":
+    start: 2016-08-07
+    end:   2016-08-12
+    location: Berlin, Germany
+    submission:   2016-02-29
+    notification: 
+    camera-ready: 
+    url: http://acl2016.org
+    remark: |
+        ...
+
+"ACL 2016 (long paper)":
+    start: 2016-08-07
+    end:   2016-08-12
+    location: Berlin, Germany
+    submission:   2016-03-18
+    notification: 
+    camera-ready: 
+    url: http://acl2016.org
+    remark: |
+        ...
+
+"ACL 2016 WS: MWE":
+    start: 2016-08-11
+    end:   2016-08-11
+    location: Berlin, Germany
+    submission:   2016-05-15
+    notification: 
+    camera-ready: 
+    url: http://multiword.sourceforge.net/mwe2016
+    remark: |
+        ...
+
+"I Annotate 2016":
+    start: 2016-05-19
+    end:   2016-05-20
+    location: Berlin, Germany
+    submission:   2016-03-13
+    notification: 2016-03-21
+    camera-ready: 
+    url: http://iannotate.org
+    remark: |
+        ...
+
+"Slovko 2015":
+    start: 2015-10-21
+    end:   2015-10-23
+    location: Bratislava
+    submission:   2015-02-28
+    notification: 2015-06-01
+    camera-ready: 2015-09-01
+    url: http://korpus.sk/slovko.html
+    remark: |
+        ...
+
+"LRE special issue on Computational Semantic Analysis of Language - SemEval-2014 and beyond":
+    start: 2015-07-01
+    end:   2015-07-01
+    location: xx
+    submission:   2014-11-01
+    notification: 2015-02-15
+    camera-ready: 
+    url: http://alt.qcri.org/semeval2014/index.php?id=lre-special-issue
+    remark: |
+        ...
+
+"CICLing 2015":
+    start: 2015-04-14
+    end:   2015-04-20
+    location: Cairo, Egypt
+    submission:   2015-01-25
+    notification: 
+    camera-ready: 
+    url: http://www.CICLing.org/2015
+    remark: |
+        ...
+
+"NetWordS 2015":
+    start: 2015-03-30
+    end:   2015-04-01
+    location: Pisa, Italy
+    submission:   2014-12-01
+    notification: 2015-01-15
+    camera-ready: 2015-02-15
+    url: http://www.networds-esf.eu/index.php?page=final-conference
+    remark: |
+        ...
+
+"PARSEME 4th general meeting":
+    start: 2015-03-19
+    end:   2015-03-20
+    location: Valletta, Malta
+    submission:   2015-01-05
+    notification: 2015-01-16
+    camera-ready: 2015-02-02
+    url: http://typo.uni-konstanz.de/parseme/index.php/event/meetings/74-4th-general-meeting-march-2014-malta
+    remark: |
+        ...
+
+"First Intl WS on CL for Uralic Languages":
+    start: 2015-01-16
+    end:   2015-01-16
+    location: Tromso, Norway
+    submission:   2014-11-01
+    notification: 2014-12-01
+    camera-ready: 2014-12-14
+    url: http://gtweb.uit.no/iwclul2015
+    remark: |
+        ...
+
+"MSZNY 2015":
+    start: 2015-01-15
+    end:   2015-01-16
+    location: Szeged
+    submission:   2014-10-07
+    notification: 2014-11-04
+    camera-ready: 2014-12-01
+    url: http://rgai.inf.u-szeged.hu/mszny2015
+    remark: |
+        ...
+
+"JSSP 2014":
+    start: 2014-xx-xx
+    end:   2014-xx-xx
+    location: Tel Aviv
+    submission:   
+    notification: 
+    camera-ready: 
+    url: 
+    remark: |
+        ...
+
+"NLPCS 2014":
+    start: 2014-10-27
+    end:   2014-10-29
+    location: Venice
+    submission:   2014-06-20
+    notification: 2014-07-20
+    camera-ready: 2014-09-05
+    url: http://project.cgm.unive.it/nlpcs2014
+    remark: |
+        ...
+
+"EMNLP 2014 TEXAS WS":
+    start: 2014-10-29
+    end:   2014-10-29
+    location: Doha, Qatar
+    submission:   2014-08-08
+    notification: 2014-08-26
+    camera-ready: 2014-09-15
+    url: http://emnlp2014.org/workshops/TEXAS/call.html
+    remark: |
+        ...
+
+"EMNLP 2014":
+    start: 2014-10-26
+    end:   2014-10-28
+    location: Doha, Qatar
+    submission:   2014-06-02
+    notification: 2014-07-22
+    camera-ready: 2014-08-26
+    url: http://emnlp2014.org
+    remark: |
+        ...
+
+"PolTAL 2014":
+    start: 2014-09-17
+    end:   2014-09-19
+    location: Warsaw, Poland
+    submission:   2014-03-30
+    notification: 2014-05-10
+    camera-ready: 2014-06-01
+    url: http://poltal.ipipan.waw.pl
+    remark: |
+        ...
+
+"TSD 2014":
+    start: 2014-09-08
+    end:   2014-09-12
+    location: Brno, Czech Republic
+    submission:   2014-03-15
+    notification: 2014-05-15
+    camera-ready: 2014-05-31
+    url: http://www.tsdconference.org
+    remark: |
+        ...
+
+"COLING 2014":
+    start: 2014-08-23
+    end:   2014-08-30
+    location: Dublin, Ireland
+    submission:   2014-03-21
+    notification: 2014-05-23
+    camera-ready: 2014-06-06
+    url: http://www.coling-2014.org
+    remark: |
+        ...
+
+"SemEval-2014":
+    start: 2014-08-23
+    end:   2014-08-30
+    location: Dublin, Ireland???
+    submission:   2014-03-15
+    notification: 2014-05-30
+    camera-ready: 2014-06-30
+    url: http://alt.qcri.org/semeval2014
+    remark: |
+        ...
+
+"Intl Conf on Computers Helping People with Special Needs":
+    start: 2014-07-09
+    end:   2014-07-11
+    location: Saint-Denis, France
+    submission:   2014-02-01
+    notification: 2014-03-01
+    camera-ready: 2013-04-04
+    url: http://www.icchp.org
+    remark: |
+        ...
+
+"ACL 2014 (long paper)":
+    start: 2014-06-22
+    end:   2014-06-27
+    location: Baltimore, MD
+    submission:   2014-01-10
+    notification: 2014-03-05
+    camera-ready: 2014-04-11
+    url: http://www.cs.jhu.edu/ACL2014/
+    remark: |
+        ...
+
+"ACL 2014 (short paper)":
+    start: 2014-06-22
+    end:   2014-06-27
+    location: Baltimore, MD
+    submission:   2014-03-12
+    notification: 2014-04-17
+    camera-ready: 2014-04-30
+    url: http://www.cs.jhu.edu/ACL2014
+    remark: |
+        ...
+
+"ACL 2014 WS on EVENTS: Def, Detect, Coref and Repr":
+    start: 2014-06-27
+    end:   2014-06-27
+    location: Baltimore, MD
+    submission:   
+    notification: 
+    camera-ready: 
+    url: http://www.cs.jhu.edu/ACL2014/Workshops.htm
+    remark: |
+        ...
+
+"ACL 2014 WS on Semantic Parsing":
+    start: 2014-06-26
+    end:   2014-06-26
+    location: Baltimore, MD
+    submission:   2014-03-31
+    notification: 2014-04-21
+    camera-ready: 2014-04-28
+    url: http://sp14.ws
+    remark: |
+        ...
+
+"LREC 2014":
+    start: 2014-05-26
+    end:   2014-05-31
+    location: Reykjavik
+    submission:   2013-10-24
+    notification: 2014-01-31
+    camera-ready: 2014-03-22
+    url: http://lrec2014.lrec-conf.org
+    remark: |
+        ...
+
+"LREC 2014 WS Challenges in the management of large corpora":
+    start: 2014-05-31
+    end:   2014-05-31
+    location: Reykjavik
+    submission:   2014-02-13
+    notification: 2014-03-10
+    camera-ready: 
+    url: http://corpora.ids-mannheim.de/cmlc.html
+    remark: |
+        ...
+
+"Extended Semantic Web Conf ESWC 2014":
+    start: 2014-05-25
+    end:   2014-05-29
+    location: Anissaras/Hersonissou, Crete
+    submission:   2014-01-08
+    notification: 2014-02-26
+    camera-ready: 2014-03-10
+    url: http://2014.eswc-conferences.org
+    remark: |
+        ...
+
+"Extended Semantic Web Conf ESWC 2014 (poster)":
+    start: 2014-05-25
+    end:   2014-05-29
+    location: Anissaras/Hersonissou, Crete
+    submission:   2014-03-16
+    notification: 2014-04-10
+    camera-ready: 2014-04-25
+    url: http://2014.eswc-conferences.org
+    remark: |
+        ...
+
+"LREC 2014 WS on Interoperable Semantic Annotation":
+    start: 2014-05-26
+    end:   2014-05-26
+    location: Reykjavik
+    submission:   2014-03-01
+    notification: 2014-03-10
+    camera-ready: 2014-03-22
+    url: http://sigsem.uvt.nl/isa10
+    remark: |
+        ...
+
+"Motiváltság és nyelvi ikonicitás":
+    start: 2014-05-23
+    end:   2014-05-24
+    location: Kolozsvár
+    submission:   2014-03-01
+    notification: 
+    camera-ready: 
+    url: http://hunlang.lett.ubbcluj.ro/hu/motivaltsag-es-nyelvi-ikonicitas
+    remark: |
+        ...
+
+"EACL 2014 (long paper)":
+    start: 2014-04-26
+    end:   2014-04-30
+    location: Göteborg
+    submission:   2013-10-18
+    notification: 2013-12-20
+    camera-ready: 2014-02-14
+    url: http://eacl2014.org
+    remark: |
+        ...
+
+"EACL 2014 (short paper)":
+    start: 2014-04-26
+    end:   2014-04-30
+    location: Göteborg
+    submission:   2014-01-06
+    notification: 2014-02-24
+    camera-ready: 2014-03-03
+    url: http://eacl2014.org
+    remark: |
+        ...
+
+"EACL 2014 WS on Continuous VSMs and their Compositionality":
+    start: 2014-04-27
+    end:   2014-04-27
+    location: Göteborg
+    submission:   2014-01-23
+    notification: 2014-02-20
+    camera-ready: 2014-03-03
+    url: https://sites.google.com/site/cvscworkshop2014/
+    remark: |
+        ...
+
+"EACL 2014 WS on MWE":
+    start: 2014-04-26
+    end:   2014-04-27
+    location: Göteborg
+    submission:   2014-01-30
+    notification: 2014-02-20
+    camera-ready: 2014-03-03
+    url: http://multiword.sourceforge.net/mwe2014
+    remark: |
+        ...
+
+"EACL 2014 WS on Type Theory and NL Semantics":
+    start: 2014-04-27
+    end:   2014-04-27
+    location: Göteborg
+    submission:   2014-01-23
+    notification: 2014-02-20
+    camera-ready: 2014-03-03
+    url: http://clt.gu.se/event/2014-04-27/type-theory-workshop-eacl-2014
+    remark: |
+        ...
+
+"EACL 2014 WS on Deep Language Processing for Quality Applications":
+    start: 2014-04-26
+    end:   2014-04-26
+    location: Göteborg
+    submission:   2014-01-23
+    notification: 2014-02-20
+    camera-ready: 2014-03-03
+    url: http://bultreebank.org/DeepLT4QApp
+    remark: |
+        ...
+
+"CICLing 2014":
+    start: 2014-04-06
+    end:   2014-04-12
+    location: Nepal
+    submission:   2013-12-31
+    notification: 
+    camera-ready: 
+    url: http://www.cicling.org
+    remark: |
+        ...
+
+"MSZNY 2014":
+    start: 2014-01-16
+    end:   2014-01-17
+    location: Szeged
+    submission:   2013-10-08
+    notification: 2013-11-05
+    camera-ready: 2013-12-02
+    url: http://www.inf.u-szeged.hu/rgai/mszny2014
+    remark: |
+        ...
+
+"CogInfoCom 2013":
+    start: 2013-12-02
+    end:   2013-12-05
+    location: Budapest
+    submission:   2013-09-15
+    notification: 2013-10-28
+    camera-ready: 2013-11-11
+    url: http://www.coginfocom.hu
+    remark: |
+        ...
+
+"Joint Symposium on Semantic Processing 2013":
+    start: 2013-11-20
+    end:   2013-11-22
+    location: Trento, Italy
+    submission:   2013-09-15
+    notification: 2013-10-15
+    camera-ready: 2013-10-29
+    url: http://jssp2013.fbk.eu
+    remark: |
+        ...
+
+"EMNLP 2013":
+    start: 2013-10-18
+    end:   2013-10-21
+    location: Seattle, USA
+    submission:   2013-07-05
+    notification: 2013-08-26
+    camera-ready: 2013-09-16
+    url: http://hum.csse.unimelb.edu.au/emnlp2013
+    remark: |
+        ...
+
+"IJCNLP 2013":
+    start: 2013-10-14
+    end:   2013-10-19
+    location: Nagoya, Japan
+    submission:   2013-05-17
+    notification: 2013-07-08
+    camera-ready: 2013-08-09
+    url: http://lang.cs.tut.ac.jp/ijcnlp2013
+    remark: |
+        ...
+
+"RANLP 2013 WS":
+    start: 2013-09-12
+    end:   2013-09-13
+    location: Hissar, Bulgaria
+    submission:   2013-07-03
+    notification: 2013-08-02
+    camera-ready: 2013-08-16
+    url: http://www.lml.bas.bg/ranlp2013
+    remark: |
+        ...
+
+"RANLP 2013":
+    start: 2013-09-09
+    end:   2013-09-11
+    location: Hissar, Bulgaria
+    submission:   2013-05-13
+    notification: 2013-07-01
+    camera-ready: 2013-07-31
+    url: http://www.lml.bas.bg/ranlp2013
+    remark: |
+        ...
+
+"MT Summit 2013":
+    start: 2013-09-02
+    end:   2013-09-06
+    location: Nice, France
+    submission:   2013-04-15
+    notification: 2013-05-31
+    camera-ready: 2013-07-01
+    url: http://www.mtsummit2013.info
+    remark: |
+        ...
+
+"TSD 2013":
+    start: 2013-09-01
+    end:   2013-09-05
+    location: Plzen
+    submission:   2013-03-31
+    notification: 2013-05-12
+    camera-ready: 2013-06-09
+    url: http://www.kiv.zcu.cz/tsd2013
+    remark: |
+        ...
+
+"DepLing 2013":
+    start: 2013-08-27
+    end:   2013-08-31
+    location: Prague
+    submission:   2013-04-15
+    notification: 2013-05-31
+    camera-ready: 2013-06-17
+    url: http://ufal.mff.cuni.cz/project/depling13
+    remark: |
+        ...
+
+"ACL 2013 WS: BioNLP":
+    start: 2013-08-08
+    end:   2013-08-09
+    location: Sofia, Bulgaria
+    submission:   2013-04-xx
+    notification: 2013-05-xx
+    camera-ready: 2013-06-xx
+    url: http://compbio.ucdenver.edu/BioNLP2013/index.shtml
+    remark: |
+        ...
+
+"ACL 2013 WS: SMT ":
+    start: 2013-08-08
+    end:   2013-08-09
+    location: Sofia, Bulgaria
+    submission:   2013-04-xx
+    notification: 2013-05-xx
+    camera-ready: 2013-06-xx
+    url: http://statmt.org/wmt13
+    remark: |
+        ...
+
+"ACL 2013 WS: LAW":
+    start: 2013-08-08
+    end:   2013-08-09
+    location: Sofia, Bulgaria
+    submission:   2013-04-xx
+    notification: 2013-05-xx
+    camera-ready: 2013-06-xx
+    url: http://www.linguistics.ruhr-uni-bochum.de/law7-id
+    remark: |
+        ...
+
+"ACL 2013 (short paper)":
+    start: 2013-08-04
+    end:   2013-08-09
+    location: Sofia, Bulgaria
+    submission:   2013-04-14
+    notification: 2013-05-12
+    camera-ready: 2013-05-22
+    url: http://acl2013.org
+    remark: |
+        ...
+
+"ACL 2013 WS: Cognitive Modeling and Computational Linguistics":
+    start: 2013-08-08
+    end:   2013-08-08
+    location: Sofia, Bulgaria
+    submission:   2013-04-xx
+    notification: 2013-05-xx
+    camera-ready: 2013-06-xx
+    url: http://cmcl.ucsd.edu
+    remark: |
+        ...
+
+"ACL 2013 WS: LaTeCH":
+    start: 2013-08-08
+    end:   2013-08-08
+    location: Sofia, Bulgaria
+    submission:   2013-04-xx
+    notification: 2013-05-xx
+    camera-ready: 2013-06-xx
+    url: http://sighum.science.ru.nl/latech2013
+    remark: |
+        ...
+
+"ACL 2013 WS: HyTra":
+    start: 2013-08-08
+    end:   2013-08-08
+    location: Sofia, Bulgaria
+    submission:   2013-04-xx
+    notification: 2013-05-xx
+    camera-ready: 2013-06-xx
+    url: http://hytra.barcelonamedia.org/hytra2013
+    remark: |
+        ...
+
+"*SEM 2013":
+    start: 2013-06-13
+    end:   2013-06-14
+    location: Atlanta, USA
+    submission:   2013-03-15
+    notification: 2013-04-12
+    camera-ready: 2013-04-21
+    url: http://clic2.cimec.unitn.it/starsem2013
+    remark: |
+        ...
+
+"NAACL 2013 WS: Events: Definition, Detection, Coreference, and Representation":
+    start: 2013-06-14
+    end:   2013-06-14
+    location: Atlanta, USA
+    submission:   2013-03-xx
+    notification: 2013-03-xx
+    camera-ready: 2013-04-xx
+    url: https://sites.google.com/site/cfpwsevents
+    remark: |
+        ...
+
+"NAACL 2013 WS: MWE":
+    start: 2013-06-13
+    end:   2013-06-14
+    location: Atlanta, USA
+    submission:   2013-03-xx
+    notification: 2013-03-xx
+    camera-ready: 2013-04-xx
+    url: http://multiword.sourceforge.net/mwe2013
+    remark: |
+        ...
+
+"NAACL 2013 WS: SSST":
+    start: 2013-06-13
+    end:   2013-06-13
+    location: Atlanta, USA
+    submission:   2013-03-xx
+    notification: 2013-03-xx
+    camera-ready: 2013-04-xx
+    url: http://www.cse.ust.hk/~dekai/ssst
+    remark: |
+        ...
+
+"CoNLL 2013":
+    start: 2013-08-??
+    end:   2012-08-??
+    location: Sofia, Bulgaria
+    submission:   
+    notification: 
+    camera-ready: 
+    url: 
+    remark: |
+        ...
 ...
 EOF
