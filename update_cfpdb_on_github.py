@@ -3,6 +3,7 @@
 
 import os
 import sys
+import shutil
 from datetime import date
 
 from git import Repo, Actor
@@ -11,6 +12,9 @@ work_dir = 'repo_test'
 
 # Compute absolute path for working dir for later use
 abs_work_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), work_dir)
+
+# Clean work_dir
+shutil.rmtree(abs_work_dir)
 
 # Clone master
 repo = Repo.clone_from('git@github.com:dlazesz/cfpdb.git', abs_work_dir, branch='master')
@@ -22,8 +26,9 @@ repo.git.checkout('--track', 'origin/gh-pages')
 # Get back to master branch
 repo.git.checkout('master')
 
-# Get the lastest YAML file
+# Get the lastest YAML file but remove it from index
 repo.git.checkout('conferences', '--', 'conferences.yaml')
+repo.git.reset()
 
 # Go into the git working dir and also add it to modulepath!
 os.chdir(abs_work_dir)
@@ -42,7 +47,7 @@ os.rename('cfps.html', 'index.html')
 # add result
 repo.index.add(['index.html'])
 
-if len(repo.index.diff(None)) > 0:
+if len(repo.index.diff('HEAD')) > 0:
     # commit result
     author = Actor("CFP Updater Bot", "this.bot.h@s.no.email")
     repo.index.commit('Update on {0}'.format(date.today().isoformat()), author=author, committer=author)
