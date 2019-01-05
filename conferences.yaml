@@ -50,6 +50,17 @@ MSZNY 2019:
     remark: |
         ez kell: háló impl! (!) XXX :) + vmi algókezdemény vele! :)
 
+MWE WS 2019:
+    start: 2019-08-02
+    end:   2019-08-02
+    location: Florence, Italy
+    submission:   2019-04-26
+    notification: 2019-05-24
+    camera-ready: 2019-06-03
+    url: http://multiword.sourceforge.net/mwewn2019
+    remark: |
+        teszt!
+
 NAACL 2019:
     start: 2019-06-02
     end:   2019-06-07
