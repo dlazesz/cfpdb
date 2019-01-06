@@ -12,7 +12,7 @@ import yaml
 
 
 # Secondary sorting key order...
-event_order = ('submission', 'notification', 'camera-ready', 'start', 'end')
+event_order = ('submission', 'notification', 'camera-ready', 'begin', 'end')
 events = {event: i for i, event in enumerate(event_order)}
 far_past = date.today().replace(year=date.today().year-10)
 far_future = date.today().replace(year=date.today().year+10)
@@ -125,10 +125,10 @@ def print_conf(pos, name, data, out_stream=sys.stdout, alert=False):
         name_formatted = '<a href="{0}">{1}</a>'.format(data['url'], name_formatted)
 
     alert_event = int(data['sort_date'].split('_')[1])
-    begin = format_alert(data['sort_date'], data['start'], '#d0f0d0', alert and alert_event == events['start'])
+    begin = format_alert(data['sort_date'], data['begin'], '#d0f0d0', alert and alert_event == events['begin'])
 
     end = ''
-    if data['start'] != data['end']:
+    if data['begin'] != data['end']:
         end = format_alert(data['sort_date'], data['end'], '#d0f0d0', alert and alert_event == events['end'])
         end = ' – {0}'.format(end)
 
