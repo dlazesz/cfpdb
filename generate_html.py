@@ -4,14 +4,16 @@
 import sys
 
 from datetime import date
-from operator import itemgetter
 from urllib.parse import quote
+from operator import itemgetter
+from calendar import monthrange
 
 import yaml
 
 
 # Secondary sorting key order...
-event_order = ('submission', 'notification', 'camera-ready', 'start')
+event_order = ('submission', 'notification', 'camera-ready', 'start', 'end')
+events = {event: i for i, event in enumerate(event_order)}
 far_past = date.today().replace(year=date.today().year-10)
 far_future = date.today().replace(year=date.today().year+10)
 
@@ -57,10 +59,14 @@ def correct_date(value, far_future):
                 try:
                     v = int(v)
                 except ValueError:
-                    v = 1
+                    v = -1
                 value_out.append(v)
-            if value_out[0] == 1:
+            if value_out[0] == -1:
                 value_out[0] = far_future.year  # Totally wrong.
+            if value_out[1] == -1:
+                value_out[1] = 12  # Last month of the year
+            if value_out[2] == -1:
+                value_out[2] = monthrange(value_out[0], value_out[1])[1]  # Last day of a month
             value = date(*value_out)
 
     return value
@@ -68,21 +74,18 @@ def correct_date(value, far_future):
 
 def sort_confs(confs):
     curr_date = date.today()
-    events = {event: i for i, event in enumerate(event_order)}
     fields = [field for field, _ in sorted(events.items(), key=itemgetter(1))]  # Sorted for stability
 
     for name, data in confs.items():
-        sort_date, sort_field = far_future, None
-        newest_date, newest_filed = far_past, None
+        curr_last_date = correct_date(data.get(event_order[-1], ''), far_future)
+        sort_date, sort_field = curr_last_date, event_order[-1]
+        newest_date, newest_filed = far_past, event_order[0]
         for field in fields:
-            field_val = correct_date(data.get(field, ''), far_future)
+            field_val = correct_date(data.get(field, ''), curr_last_date)
             if curr_date <= field_val < sort_date:  # The field_val is the nearest one in the future if there is any...
                 sort_date, sort_field = field_val, field  # Refine next upcomming date and event
             if newest_date < field_val:  # Track the last event from a conference even if it is passed
                 newest_date, newest_filed = field_val, field
-
-        if sort_date == far_future:  # Keep order even when a conference is over (eg. all dates are in the future)...
-            sort_date, sort_field = newest_date, newest_filed
 
         data['next_event'] = sort_field
         data['{0}_date'.format(sort_field)] = sort_date
@@ -108,9 +111,8 @@ def format_alert(sort_date, due_date, color, alert):
     else:
         formatted_field = ''
     if alert and sort_date.startswith(str(correct_date(due_date, far_future))):
-        alert = False
         formatted_field = '<span style="background: {0}">{1}</span>'.format(color, due_date)
-    return formatted_field, alert
+    return formatted_field
 
 
 def print_conf(pos, name, data, out_stream=sys.stdout, alert=False):
@@ -122,16 +124,20 @@ def print_conf(pos, name, data, out_stream=sys.stdout, alert=False):
     if data['url'] is not None and len(data['url']) > 0:
         name_formatted = '<a href="{0}">{1}</a>'.format(data['url'], name_formatted)
 
-    begin, alert = format_alert(data['sort_date'], data['start'], '#d0f0d0', alert)
+    alert_event = int(data['sort_date'].split('_')[1])
+    begin = format_alert(data['sort_date'], data['start'], '#d0f0d0', alert and alert_event == events['start'])
 
     end = ''
     if data['start'] != data['end']:
-        end, alert = format_alert(data['sort_date'], data['end'], '#d0f0d0', alert)
+        end = format_alert(data['sort_date'], data['end'], '#d0f0d0', alert and alert_event == events['end'])
         end = ' – {0}'.format(end)
 
-    submission, alert = format_alert(data['sort_date'], data['submission'], '#ffd0d0', alert)
-    notification, alert = format_alert(data['sort_date'], data['notification'], '#f8f8d0', alert)
-    camera_ready, alert = format_alert(data['sort_date'], data['camera-ready'], '#d0f0d0', alert)
+    submission = format_alert(data['sort_date'], data['submission'], '#ffd0d0',
+                              alert and alert_event == events['submission'])
+    notification = format_alert(data['sort_date'], data['notification'], '#f8f8d0',
+                                alert and alert_event == events['notification'])
+    camera_ready = format_alert(data['sort_date'], data['camera-ready'], '#d0f0d0',
+                                alert and alert_event == events['camera-ready'])
 
     print('<div style="margin-bottom: 0.5em;{0}">{1} ({2}{3}, <a href="http://maps.google.com/maps?q={4}">{5}</a>)'
           .format(background, name_formatted, begin, end, quote(data['location']), data['location']),
