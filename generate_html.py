@@ -44,7 +44,9 @@ def load_yaml(cfg_file):
 
 
 def correct_date(value, far_future):
-    if not isinstance(value, date):
+    if value == None:
+        value = far_future  # Date field emtpy
+    elif not isinstance(value, date):
         value = value.split('-')
         if len(value) != 3:  # YYYY-MM-DD
             value = far_future  # Totally wrong.
@@ -100,7 +102,10 @@ def sort_confs(confs):
 
 
 def format_alert(sort_date, due_date, color, alert):
-    formatted_field = str(due_date)
+    if due_date is not None:
+        formatted_field = str(due_date)
+    else:
+        formatted_field = ''
     if alert and sort_date.startswith(str(correct_date(due_date, far_future))):
         alert = False
         formatted_field = '<span style="background: {0}">{1}</span>'.format(color, due_date)
@@ -113,7 +118,7 @@ def print_conf(pos, name, data, out_stream=sys.stdout, alert=False):
         background = 'background: #f4f4f4'
 
     name_formatted = '<span style="font-style: italic">{0}</span>'.format(name)
-    if len(data['url']) > 0:
+    if data['url'] is not None and len(data['url']) > 0:
         name_formatted = '<a href="{0}">{1}</a>'.format(data['url'], name_formatted)
 
     begin, alert = format_alert(data['sort_date'], data['start'], '#d0f0d0', alert)
