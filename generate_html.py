@@ -5,6 +5,7 @@ import sys
 
 from datetime import date
 from operator import itemgetter
+from urllib.parse import quote
 
 import yaml
 
@@ -75,7 +76,7 @@ def sort_confs(confs):
         newest_date, newest_filed = far_past, None
         for field in fields:
             field_val = correct_date(data.get(field, ''), far_future)
-            if curr_date < field_val < sort_date:  # The field_val is the nearest one in the future if there is any...
+            if curr_date <= field_val < sort_date:  # The field_val is the nearest one in the future if there is any...
                 sort_date, sort_field = field_val, field  # Refine next upcomming date and event
             if newest_date < field_val:  # Track the last event from a conference even if it is passed
                 newest_date, newest_filed = field_val, field
@@ -132,8 +133,8 @@ def print_conf(pos, name, data, out_stream=sys.stdout, alert=False):
     notification, alert = format_alert(data['sort_date'], data['notification'], '#f8f8d0', alert)
     camera_ready, alert = format_alert(data['sort_date'], data['camera-ready'], '#d0f0d0', alert)
 
-    print('<div style="margin-bottom: 0.5em;{0}">{1}({2}{3}, <a href="http://maps.google.com/maps?q={4}">{4}</a>)'
-          .format(background, name_formatted, begin, end, data['location']),
+    print('<div style="margin-bottom: 0.5em;{0}">{1} ({2}{3}, <a href="http://maps.google.com/maps?q={4}">{5}</a>)'
+          .format(background, name_formatted, begin, end, quote(data['location']), data['location']),
           '<br/>',
           '<span style="font-size: smaller">submission:</span> {0} – '.format(submission),
           '<span style="font-size: smaller">notification:</span> {0} – '.format(notification),
@@ -146,21 +147,29 @@ def print_html(confs, out_stream=sys.stdout):
     past_confs, future_confs = confs
 
     # Header
-    print('<html>',
+    print('<!DOCTYPE html>',
+          '<html lang="en">',
+          '<head>',
+          '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> ',
           '<title>Natural Language Processing (NLP) and Computational Linguistics (CL) Conferences</title>',
+          '</head>',
           '<body style="font-family: Verdana, Helvetica, sans-serif; margin: 1em; width: 780px">',
           sep='\n', file=out_stream)
 
+    position = 0
     if len(future_confs) > 0:
+        position += 1
         print('<span style="font-size: larger; font-weight: bold">Upcoming...</span>', file=out_stream)
 
-    for pos, (name, data) in enumerate(future_confs, start=1):
+    for pos, (name, data) in enumerate(future_confs, start=position+1):
         print_conf(pos, name, data, out_stream, alert=True)
 
+    position += len(future_confs)
     if len(past_confs) > 0:
+        position += 1
         print('<span style="font-size: larger; font-weight: bold">Past...</span>', file=out_stream)
 
-    for pos, (name, data) in enumerate(past_confs, start=len(future_confs)+1):
+    for pos, (name, data) in enumerate(past_confs, start=position+1):
         print_conf(pos, name, data, out_stream)
 
     # Footer
