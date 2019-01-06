@@ -18,7 +18,7 @@ print("Syntax OK!")
 %YAML 1.1
 ---
 "MSZNY 2019":
-    start: 2019-01-24
+    begin: 2019-01-24
     end:   2019-01-25
     location: Szeged
     submission:   2018-11-15
@@ -29,7 +29,7 @@ print("Syntax OK!")
         ...
 
 "CICLing 2019":
-    start: 2019-04-07
+    begin: 2019-04-07
     end:   2019-04-13
     location: La Rochelle
     submission:   2019-01-10
@@ -40,7 +40,7 @@ print("Syntax OK!")
         ...
 
 "Corpus Linguistics 2019":
-    start: 2019-07-22
+    begin: 2019-07-22
     end:   2019-07-26
     location: Cardiff, Wales
     submission:   2019-01-14
@@ -51,7 +51,7 @@ print("Syntax OK!")
         ...
 
 "ICSH 14":
-    start: 2019-06-11
+    begin: 2019-06-11
     end:   2019-06-12
     location: Potsdam, Germany
     submission:   2019-01-15
@@ -62,7 +62,7 @@ print("Syntax OK!")
         ...
 
 "9th LTC":
-    start: 2019-05-17
+    begin: 2019-05-17
     end:   2019-05-19
     location: Poznan
     submission:   2019-02-04
@@ -73,7 +73,7 @@ print("Syntax OK!")
         ...
 
 "eLexicography 2019":
-    start: 2019-10-01
+    begin: 2019-10-01
     end:   2019-10-03
     location: Sintra, Portugal
     submission:   2019-02-15
@@ -84,7 +84,7 @@ print("Syntax OK!")
         ...
 
 "NAACL 2019":
-    start: 2019-06-02
+    begin: 2019-06-02
     end:   2019-06-07
     location: Minneapolis, USA
     submission:   2018-12-03
@@ -95,7 +95,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2019":
-    start: 2019-07-28
+    begin: 2019-07-28
     end:   2019-08-02
     location: Florence, Italy
     submission:   2019-03-04
@@ -106,7 +106,7 @@ print("Syntax OK!")
         ...
 
 "TSD 2019":
-    start: 2019-09-xx
+    begin: 2019-09-xx
     end:   2019-09-xx
     location: Ljubljana, Slovenia
     submission:   2019-03-31
@@ -117,7 +117,7 @@ print("Syntax OK!")
         ...
 
 "MWE WS 2019":
-    start: 2019-08-02
+    begin: 2019-08-02
     end:   2019-08-02
     location: Florence, Italy
     submission:   2019-04-26
@@ -128,7 +128,7 @@ print("Syntax OK!")
         ...
 
 "RANLP 2019":
-    start: 2019-08-31
+    begin: 2019-08-31
     end:   2019-09-06
     location: Varna, Bulgaria
     submission:   2019-04-xx
@@ -139,7 +139,7 @@ print("Syntax OK!")
         ...
 
 "NoDaLiDa 2019":
-    start: 2019-09-30
+    begin: 2019-09-30
     end:   2019-10-02
     location: Turku, Finland
     submission:   2019-05-31
@@ -150,7 +150,7 @@ print("Syntax OK!")
         ...
 
 "LREC 2020":
-    start: 2020-05-xx
+    begin: 2020-05-xx
     end:   2020-05-xx
     location: XX
     submission:   2019-10-xx
@@ -161,7 +161,7 @@ print("Syntax OK!")
         ...
 
 "TSD 2018":
-    start: 2018-09-11
+    begin: 2018-09-11
     end:   2018-09-14
     location: Brno
     submission:   2018-03-15
@@ -172,7 +172,7 @@ print("Syntax OK!")
         ...
 
 "20. Élőnyelvi Konferencia":
-    start: 2018-08-30
+    begin: 2018-08-30
     end:   2018-09-01
     location: Budapest
     submission:   2018-01-15
@@ -183,7 +183,7 @@ print("Syntax OK!")
         ...
 
 "COLING 2018":
-    start: 2018-08-20
+    begin: 2018-08-20
     end:   2018-08-25
     location: Santa Fe, New Mexico
     submission:   2018-03-16
@@ -194,7 +194,7 @@ print("Syntax OK!")
         ...
 
 "EURALEX 2018":
-    start: 2018-07-17
+    begin: 2018-07-17
     end:   2018-07-21
     location: Ljubljana, Slovenia
     submission:   2017-12-01
@@ -205,7 +205,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2018":
-    start: 2018-07-15
+    begin: 2018-07-15
     end:   2018-07-20
     location: Melbourne
     submission:   201x-xx-xx
@@ -216,7 +216,7 @@ print("Syntax OK!")
         ...
 
 "NAACL 2018":
-    start: 2018-06-01
+    begin: 2018-06-01
     end:   2018-06-06
     location: New Orleans, Louisiana
     submission:   2017-12-15
@@ -227,7 +227,7 @@ print("Syntax OK!")
         ...
 
 "DUCOG 2018":
-    start: 2018-05-24
+    begin: 2018-05-24
     end:   2018-05-27
     location: Dubrovnik
     submission:   2018-02-28
@@ -238,7 +238,7 @@ print("Syntax OK!")
         ...
 
 "LREC 2018":
-    start: 2018-05-07
+    begin: 2018-05-07
     end:   2018-05-12
     location: Miyazaki, Japan
     submission:   2017-10-02
@@ -249,7 +249,7 @@ print("Syntax OK!")
         ...
 
 "CICLing 2018":
-    start: 2018-03-18
+    begin: 2018-03-18
     end:   2018-03-24
     location: Hanoi, Vietnam
     submission:   2018-01-05
@@ -260,7 +260,7 @@ print("Syntax OK!")
         ...
 
 "CRH 2018 Corpus-based Res in Hum WS":
-    start: 2018-01-25
+    begin: 2018-01-25
     end:   2018-01-26
     location: Vienna
     submission:   2017-10-15
@@ -271,7 +271,7 @@ print("Syntax OK!")
         ...
 
 "MSZNY 2018":
-    start: 2018-01-18
+    begin: 2018-01-18
     end:   2018-01-19
     location: Szeged
     submission:   2017-11-24
@@ -282,7 +282,7 @@ print("Syntax OK!")
         ...
 
 "EUROPHRAS 2017":
-    start: 2017-11-13
+    begin: 2017-11-13
     end:   2017-11-14
     location: London
     submission:   
@@ -293,7 +293,7 @@ print("Syntax OK!")
         ...
 
 "Össznyelvész Konf":
-    start: 2017-11-10
+    begin: 2017-11-10
     end:   2017-11-10
     location: ELTE
     submission:   2017-10-29
@@ -304,7 +304,7 @@ print("Syntax OK!")
         ...
 
 "Nyelvelmélet és dialektológia 4. A Károli Biblia nyelve":
-    start: 2017-10-17
+    begin: 2017-10-17
     end:   2017-10-18
     location: Budapest
     submission:   2017-07-10
@@ -315,7 +315,7 @@ print("Syntax OK!")
         ...
 
 "IWCS 2017":
-    start: 2017-09-19
+    begin: 2017-09-19
     end:   2017-09-22
     location: Montpellier
     submission:   2017-04-15
@@ -326,7 +326,7 @@ print("Syntax OK!")
         ...
 
 "eLexicography 2017":
-    start: 2017-09-19
+    begin: 2017-09-19
     end:   2017-09-21
     location: Leiden, Netherlands
     submission:   2017-02-15
@@ -337,7 +337,7 @@ print("Syntax OK!")
         ...
 
 "4th Intl Conf on Dependency Linguistics":
-    start: 2017-09-18
+    begin: 2017-09-18
     end:   2017-09-20
     location: Pisa, Italy
     submission:   2017-05-05
@@ -348,7 +348,7 @@ print("Syntax OK!")
         ...
 
 "EMNLP 2017":
-    start: 2017-09-07
+    begin: 2017-09-07
     end:   2017-09-11
     location: Copenhagen, Denmark
     submission:   2017-04-14
@@ -359,7 +359,7 @@ print("Syntax OK!")
         ...
 
 "26th ICOS Intl. Congress of Onomastic Sciences":
-    start: 2017-08-27
+    begin: 2017-08-27
     end:   2017-09-01
     location: Debrecen
     submission:   2016-11-30
@@ -370,7 +370,7 @@ print("Syntax OK!")
         ...
 
 "TSD 2017":
-    start: 2017-08-27
+    begin: 2017-08-27
     end:   2017-08-31
     location: Prague
     submission:   2017-03-31
@@ -381,7 +381,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2017":
-    start: 2017-07-30
+    begin: 2017-07-30
     end:   2017-08-04
     location: Vancouver, Canada
     submission:   2017-02-06
@@ -392,7 +392,7 @@ print("Syntax OK!")
         ...
 
 "EACL 2017 WS: Shared task on VMWEs":
-    start: 2017-04-xx
+    begin: 2017-04-xx
     end:   2017-04-xx
     location: Valencia, Spain
     submission:   2017-01-27
@@ -403,7 +403,7 @@ print("Syntax OK!")
         ...
 
 "EACL 2017 (long paper)":
-    start: 2017-04-03
+    begin: 2017-04-03
     end:   2017-04-07
     location: Valencia, Spain
     submission:   2016-09-30
@@ -414,7 +414,7 @@ print("Syntax OK!")
         ...
 
 "EACL 2017 (short paper)":
-    start: 2017-04-03
+    begin: 2017-04-03
     end:   2017-04-07
     location: Valencia, Spain
     submission:   2016-12-16
@@ -425,7 +425,7 @@ print("Syntax OK!")
         ...
 
 "Role of Constituents in Multi-Word Expressions WS":
-    start: 2017-03-08
+    begin: 2017-03-08
     end:   2017-03-10
     location: Saarbrücken, Germany
     submission:   2016-09-01
@@ -436,7 +436,7 @@ print("Syntax OK!")
         ...
 
 "MSZNY 2017":
-    start: 2017-01-26
+    begin: 2017-01-26
     end:   2017-01-27
     location: Szeged
     submission:   2016-11-20
@@ -447,7 +447,7 @@ print("Syntax OK!")
         ...
 
 "EMNLP 2016":
-    start: 2016-11-03
+    begin: 2016-11-03
     end:   2016-11-05
     location: Austin, Texas
     submission:   2016-06-03
@@ -458,7 +458,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2016 (short paper)":
-    start: 2016-08-07
+    begin: 2016-08-07
     end:   2016-08-12
     location: Berlin, Germany
     submission:   2016-02-29
@@ -469,7 +469,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2016 (long paper)":
-    start: 2016-08-07
+    begin: 2016-08-07
     end:   2016-08-12
     location: Berlin, Germany
     submission:   2016-03-18
@@ -480,7 +480,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2016 WS: MWE":
-    start: 2016-08-11
+    begin: 2016-08-11
     end:   2016-08-11
     location: Berlin, Germany
     submission:   2016-05-15
@@ -491,7 +491,7 @@ print("Syntax OK!")
         ...
 
 "I Annotate 2016":
-    start: 2016-05-19
+    begin: 2016-05-19
     end:   2016-05-20
     location: Berlin, Germany
     submission:   2016-03-13
@@ -502,7 +502,7 @@ print("Syntax OK!")
         ...
 
 "Slovko 2015":
-    start: 2015-10-21
+    begin: 2015-10-21
     end:   2015-10-23
     location: Bratislava
     submission:   2015-02-28
@@ -513,7 +513,7 @@ print("Syntax OK!")
         ...
 
 "LRE special issue on Computational Semantic Analysis of Language - SemEval-2014 and beyond":
-    start: 2015-07-01
+    begin: 2015-07-01
     end:   2015-07-01
     location: xx
     submission:   2014-11-01
@@ -524,7 +524,7 @@ print("Syntax OK!")
         ...
 
 "CICLing 2015":
-    start: 2015-04-14
+    begin: 2015-04-14
     end:   2015-04-20
     location: Cairo, Egypt
     submission:   2015-01-25
@@ -535,7 +535,7 @@ print("Syntax OK!")
         ...
 
 "NetWordS 2015":
-    start: 2015-03-30
+    begin: 2015-03-30
     end:   2015-04-01
     location: Pisa, Italy
     submission:   2014-12-01
@@ -546,7 +546,7 @@ print("Syntax OK!")
         ...
 
 "PARSEME 4th general meeting":
-    start: 2015-03-19
+    begin: 2015-03-19
     end:   2015-03-20
     location: Valletta, Malta
     submission:   2015-01-05
@@ -557,7 +557,7 @@ print("Syntax OK!")
         ...
 
 "First Intl WS on CL for Uralic Languages":
-    start: 2015-01-16
+    begin: 2015-01-16
     end:   2015-01-16
     location: Tromso, Norway
     submission:   2014-11-01
@@ -568,7 +568,7 @@ print("Syntax OK!")
         ...
 
 "MSZNY 2015":
-    start: 2015-01-15
+    begin: 2015-01-15
     end:   2015-01-16
     location: Szeged
     submission:   2014-10-07
@@ -579,7 +579,7 @@ print("Syntax OK!")
         ...
 
 "JSSP 2014":
-    start: 2014-xx-xx
+    begin: 2014-xx-xx
     end:   2014-xx-xx
     location: Tel Aviv
     submission:   
@@ -590,7 +590,7 @@ print("Syntax OK!")
         ...
 
 "NLPCS 2014":
-    start: 2014-10-27
+    begin: 2014-10-27
     end:   2014-10-29
     location: Venice
     submission:   2014-06-20
@@ -601,7 +601,7 @@ print("Syntax OK!")
         ...
 
 "EMNLP 2014 TEXAS WS":
-    start: 2014-10-29
+    begin: 2014-10-29
     end:   2014-10-29
     location: Doha, Qatar
     submission:   2014-08-08
@@ -612,7 +612,7 @@ print("Syntax OK!")
         ...
 
 "EMNLP 2014":
-    start: 2014-10-26
+    begin: 2014-10-26
     end:   2014-10-28
     location: Doha, Qatar
     submission:   2014-06-02
@@ -623,7 +623,7 @@ print("Syntax OK!")
         ...
 
 "PolTAL 2014":
-    start: 2014-09-17
+    begin: 2014-09-17
     end:   2014-09-19
     location: Warsaw, Poland
     submission:   2014-03-30
@@ -634,7 +634,7 @@ print("Syntax OK!")
         ...
 
 "TSD 2014":
-    start: 2014-09-08
+    begin: 2014-09-08
     end:   2014-09-12
     location: Brno, Czech Republic
     submission:   2014-03-15
@@ -645,7 +645,7 @@ print("Syntax OK!")
         ...
 
 "COLING 2014":
-    start: 2014-08-23
+    begin: 2014-08-23
     end:   2014-08-30
     location: Dublin, Ireland
     submission:   2014-03-21
@@ -656,7 +656,7 @@ print("Syntax OK!")
         ...
 
 "SemEval-2014":
-    start: 2014-08-23
+    begin: 2014-08-23
     end:   2014-08-30
     location: Dublin, Ireland???
     submission:   2014-03-15
@@ -667,7 +667,7 @@ print("Syntax OK!")
         ...
 
 "Intl Conf on Computers Helping People with Special Needs":
-    start: 2014-07-09
+    begin: 2014-07-09
     end:   2014-07-11
     location: Saint-Denis, France
     submission:   2014-02-01
@@ -678,7 +678,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2014 (long paper)":
-    start: 2014-06-22
+    begin: 2014-06-22
     end:   2014-06-27
     location: Baltimore, MD
     submission:   2014-01-10
@@ -689,7 +689,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2014 (short paper)":
-    start: 2014-06-22
+    begin: 2014-06-22
     end:   2014-06-27
     location: Baltimore, MD
     submission:   2014-03-12
@@ -700,7 +700,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2014 WS on EVENTS: Def, Detect, Coref and Repr":
-    start: 2014-06-27
+    begin: 2014-06-27
     end:   2014-06-27
     location: Baltimore, MD
     submission:   
@@ -711,7 +711,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2014 WS on Semantic Parsing":
-    start: 2014-06-26
+    begin: 2014-06-26
     end:   2014-06-26
     location: Baltimore, MD
     submission:   2014-03-31
@@ -722,7 +722,7 @@ print("Syntax OK!")
         ...
 
 "LREC 2014":
-    start: 2014-05-26
+    begin: 2014-05-26
     end:   2014-05-31
     location: Reykjavik
     submission:   2013-10-24
@@ -733,7 +733,7 @@ print("Syntax OK!")
         ...
 
 "LREC 2014 WS Challenges in the management of large corpora":
-    start: 2014-05-31
+    begin: 2014-05-31
     end:   2014-05-31
     location: Reykjavik
     submission:   2014-02-13
@@ -744,7 +744,7 @@ print("Syntax OK!")
         ...
 
 "Extended Semantic Web Conf ESWC 2014":
-    start: 2014-05-25
+    begin: 2014-05-25
     end:   2014-05-29
     location: Anissaras/Hersonissou, Crete
     submission:   2014-01-08
@@ -755,7 +755,7 @@ print("Syntax OK!")
         ...
 
 "Extended Semantic Web Conf ESWC 2014 (poster)":
-    start: 2014-05-25
+    begin: 2014-05-25
     end:   2014-05-29
     location: Anissaras/Hersonissou, Crete
     submission:   2014-03-16
@@ -766,7 +766,7 @@ print("Syntax OK!")
         ...
 
 "LREC 2014 WS on Interoperable Semantic Annotation":
-    start: 2014-05-26
+    begin: 2014-05-26
     end:   2014-05-26
     location: Reykjavik
     submission:   2014-03-01
@@ -777,7 +777,7 @@ print("Syntax OK!")
         ...
 
 "Motiváltság és nyelvi ikonicitás":
-    start: 2014-05-23
+    begin: 2014-05-23
     end:   2014-05-24
     location: Kolozsvár
     submission:   2014-03-01
@@ -788,7 +788,7 @@ print("Syntax OK!")
         ...
 
 "EACL 2014 (long paper)":
-    start: 2014-04-26
+    begin: 2014-04-26
     end:   2014-04-30
     location: Göteborg
     submission:   2013-10-18
@@ -799,7 +799,7 @@ print("Syntax OK!")
         ...
 
 "EACL 2014 (short paper)":
-    start: 2014-04-26
+    begin: 2014-04-26
     end:   2014-04-30
     location: Göteborg
     submission:   2014-01-06
@@ -810,7 +810,7 @@ print("Syntax OK!")
         ...
 
 "EACL 2014 WS on Continuous VSMs and their Compositionality":
-    start: 2014-04-27
+    begin: 2014-04-27
     end:   2014-04-27
     location: Göteborg
     submission:   2014-01-23
@@ -821,7 +821,7 @@ print("Syntax OK!")
         ...
 
 "EACL 2014 WS on MWE":
-    start: 2014-04-26
+    begin: 2014-04-26
     end:   2014-04-27
     location: Göteborg
     submission:   2014-01-30
@@ -832,7 +832,7 @@ print("Syntax OK!")
         ...
 
 "EACL 2014 WS on Type Theory and NL Semantics":
-    start: 2014-04-27
+    begin: 2014-04-27
     end:   2014-04-27
     location: Göteborg
     submission:   2014-01-23
@@ -843,7 +843,7 @@ print("Syntax OK!")
         ...
 
 "EACL 2014 WS on Deep Language Processing for Quality Applications":
-    start: 2014-04-26
+    begin: 2014-04-26
     end:   2014-04-26
     location: Göteborg
     submission:   2014-01-23
@@ -854,7 +854,7 @@ print("Syntax OK!")
         ...
 
 "CICLing 2014":
-    start: 2014-04-06
+    begin: 2014-04-06
     end:   2014-04-12
     location: Nepal
     submission:   2013-12-31
@@ -865,7 +865,7 @@ print("Syntax OK!")
         ...
 
 "MSZNY 2014":
-    start: 2014-01-16
+    begin: 2014-01-16
     end:   2014-01-17
     location: Szeged
     submission:   2013-10-08
@@ -876,7 +876,7 @@ print("Syntax OK!")
         ...
 
 "CogInfoCom 2013":
-    start: 2013-12-02
+    begin: 2013-12-02
     end:   2013-12-05
     location: Budapest
     submission:   2013-09-15
@@ -887,7 +887,7 @@ print("Syntax OK!")
         ...
 
 "Joint Symposium on Semantic Processing 2013":
-    start: 2013-11-20
+    begin: 2013-11-20
     end:   2013-11-22
     location: Trento, Italy
     submission:   2013-09-15
@@ -898,7 +898,7 @@ print("Syntax OK!")
         ...
 
 "EMNLP 2013":
-    start: 2013-10-18
+    begin: 2013-10-18
     end:   2013-10-21
     location: Seattle, USA
     submission:   2013-07-05
@@ -909,7 +909,7 @@ print("Syntax OK!")
         ...
 
 "IJCNLP 2013":
-    start: 2013-10-14
+    begin: 2013-10-14
     end:   2013-10-19
     location: Nagoya, Japan
     submission:   2013-05-17
@@ -920,7 +920,7 @@ print("Syntax OK!")
         ...
 
 "RANLP 2013 WS":
-    start: 2013-09-12
+    begin: 2013-09-12
     end:   2013-09-13
     location: Hissar, Bulgaria
     submission:   2013-07-03
@@ -931,7 +931,7 @@ print("Syntax OK!")
         ...
 
 "RANLP 2013":
-    start: 2013-09-09
+    begin: 2013-09-09
     end:   2013-09-11
     location: Hissar, Bulgaria
     submission:   2013-05-13
@@ -942,7 +942,7 @@ print("Syntax OK!")
         ...
 
 "MT Summit 2013":
-    start: 2013-09-02
+    begin: 2013-09-02
     end:   2013-09-06
     location: Nice, France
     submission:   2013-04-15
@@ -953,7 +953,7 @@ print("Syntax OK!")
         ...
 
 "TSD 2013":
-    start: 2013-09-01
+    begin: 2013-09-01
     end:   2013-09-05
     location: Plzen
     submission:   2013-03-31
@@ -964,7 +964,7 @@ print("Syntax OK!")
         ...
 
 "DepLing 2013":
-    start: 2013-08-27
+    begin: 2013-08-27
     end:   2013-08-31
     location: Prague
     submission:   2013-04-15
@@ -975,7 +975,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2013 WS: BioNLP":
-    start: 2013-08-08
+    begin: 2013-08-08
     end:   2013-08-09
     location: Sofia, Bulgaria
     submission:   2013-04-xx
@@ -986,7 +986,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2013 WS: SMT ":
-    start: 2013-08-08
+    begin: 2013-08-08
     end:   2013-08-09
     location: Sofia, Bulgaria
     submission:   2013-04-xx
@@ -997,7 +997,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2013 WS: LAW":
-    start: 2013-08-08
+    begin: 2013-08-08
     end:   2013-08-09
     location: Sofia, Bulgaria
     submission:   2013-04-xx
@@ -1008,7 +1008,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2013 (short paper)":
-    start: 2013-08-04
+    begin: 2013-08-04
     end:   2013-08-09
     location: Sofia, Bulgaria
     submission:   2013-04-14
@@ -1019,7 +1019,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2013 WS: Cognitive Modeling and Computational Linguistics":
-    start: 2013-08-08
+    begin: 2013-08-08
     end:   2013-08-08
     location: Sofia, Bulgaria
     submission:   2013-04-xx
@@ -1030,7 +1030,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2013 WS: LaTeCH":
-    start: 2013-08-08
+    begin: 2013-08-08
     end:   2013-08-08
     location: Sofia, Bulgaria
     submission:   2013-04-xx
@@ -1041,7 +1041,7 @@ print("Syntax OK!")
         ...
 
 "ACL 2013 WS: HyTra":
-    start: 2013-08-08
+    begin: 2013-08-08
     end:   2013-08-08
     location: Sofia, Bulgaria
     submission:   2013-04-xx
@@ -1052,7 +1052,7 @@ print("Syntax OK!")
         ...
 
 "*SEM 2013":
-    start: 2013-06-13
+    begin: 2013-06-13
     end:   2013-06-14
     location: Atlanta, USA
     submission:   2013-03-15
@@ -1063,7 +1063,7 @@ print("Syntax OK!")
         ...
 
 "NAACL 2013 WS: Events: Definition, Detection, Coreference, and Representation":
-    start: 2013-06-14
+    begin: 2013-06-14
     end:   2013-06-14
     location: Atlanta, USA
     submission:   2013-03-xx
@@ -1074,7 +1074,7 @@ print("Syntax OK!")
         ...
 
 "NAACL 2013 WS: MWE":
-    start: 2013-06-13
+    begin: 2013-06-13
     end:   2013-06-14
     location: Atlanta, USA
     submission:   2013-03-xx
@@ -1085,7 +1085,7 @@ print("Syntax OK!")
         ...
 
 "NAACL 2013 WS: SSST":
-    start: 2013-06-13
+    begin: 2013-06-13
     end:   2013-06-13
     location: Atlanta, USA
     submission:   2013-03-xx
@@ -1096,7 +1096,7 @@ print("Syntax OK!")
         ...
 
 "CoNLL 2013":
-    start: 2013-08-??
+    begin: 2013-08-??
     end:   2012-08-??
     location: Sofia, Bulgaria
     submission:   
