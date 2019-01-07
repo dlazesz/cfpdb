@@ -3,6 +3,9 @@ A Call for Papers database which sorts confs and highlights due dates according 
 
 The calendar is located at: https://dlazesz.github.io/cfpdb/
 
+The _iCalendar_ format is located at: https://raw.githubusercontent.com/dlazesz/cfpdb/gh-pages/conferences.ics
+
+
 ## Usage
 
 1) Edit [conferences.yaml in the conferences branch of this repository](https://github.com/dlazesz/cfpdb/blob/conferences/conferences.yaml)
@@ -46,9 +49,9 @@ There is three independent (orphan) branches in this repository:
 
 When the updater process runs, it fetches `conferences.yaml` from the _conferences_ branch in this repository and pushes the rendered html to _gh-pages_ branch
 
-## Future plans
+## New features
 
-- iCalendar file (ics) generation which can be subscribed to
+- iCalendar file (.ics) generation which can be subscribed to
 
 ## History
 Code written between Nov 2008 and Nov 2010 by Bálint Sass

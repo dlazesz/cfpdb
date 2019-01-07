@@ -3,13 +3,13 @@
 
 import sys
 
-from datetime import date
+from datetime import date, datetime, timedelta
 from urllib.parse import quote
 from operator import itemgetter
 from calendar import monthrange
 
 import yaml
-
+from ics import Calendar, Event
 
 # Secondary sorting key order...
 event_order = ('submission', 'notification', 'camera-ready', 'begin', 'end')
@@ -181,10 +181,51 @@ def print_html(confs, out_stream=sys.stdout):
           sep='\n', file=out_stream)
 
 
-def main(inp='conferences.yaml', out='cfps.html'):
+def add_event(cal, name, location, url, prefix, field_name, data, far_future_date):
+    due_date = correct_date(data.get(field_name, ''), far_future_date)
+    if due_date < far_future_date:
+        e = Event(name='{0}: {1}'.format(prefix, name), begin=datetime.combine(due_date, datetime.min.time()),
+                  end=datetime.combine(due_date, datetime.min.time()), location=location, url=url)
+        e.make_all_day()
+        cal.events.add(e)
+
+
+def create_ics(confs, stream):
+    cal = Calendar()
+
+    """
+    # For standard compliance
+    cal.add('prodid', '-//NLP CFP DB calendar//xx.url//')
+    cal.add('version', '2.0')
+    """
+
+    for name, data in confs.items():
+        begin = correct_date(data.get('begin', ''), far_future)
+        end = correct_date(data.get('end', ''), far_future)
+        location = data['location']
+        url = data['url']
+
+        for field_name in ('submission', 'notification', 'camera-ready'):
+            add_event(cal, name, location, url, field_name.upper(), field_name, data, far_future)
+
+        if begin is not None:
+            if end < begin:
+                end = begin
+
+            # Conference
+            e = Event(name=name, begin=datetime.combine(begin, datetime.min.time()), location=location, url=url)
+            e.make_all_day()
+            e.duration = end - begin + timedelta(days=1)
+            cal.events.add(e)
+
+    stream.writelines(cal)
+
+
+def main(inp='conferences.yaml', out='cfps.html', out_ics='cfps.ics'):
     conferences = load_yaml(inp)
     sorted_conferences = sort_confs(conferences)
     print_html(sorted_conferences, open(out, 'w', encoding='UTF-8'))
+    create_ics(conferences, open(out_ics, 'w', encoding='UTF-8'))
 
 
 if __name__ == '__main__':

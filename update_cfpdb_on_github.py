@@ -37,7 +37,7 @@ def run_update(work_dir):
     sys.path.append(abs_work_dir)
 
     # Create HTML from YAML file
-    from generate_html import main as gen_html
+    from generate_calendar import main as gen_html
     gen_html()
 
     # Get to master branch
@@ -45,9 +45,10 @@ def run_update(work_dir):
 
     # Overwrite old HTML file
     os.rename('cfps.html', 'index.html')
+    os.rename('cfps.ics', 'conferences.ics')
 
     # add result
-    repo.index.add(['index.html'])
+    repo.index.add(['index.html', 'conferences.ics'])
 
     if len(repo.index.diff('HEAD')) > 0:
         # commit result
