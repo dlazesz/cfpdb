@@ -46,13 +46,13 @@ def load_yaml(cfg_file):
     return yaml.load(''.join(lines))
 
 
-def correct_date(value, far_future):
-    if value == None:
-        value = far_future  # Date field emtpy
+def correct_date(value, far_future_date):
+    if value is None:
+        value = far_future_date  # Date field emtpy
     elif not isinstance(value, date):
         value = value.split('-')
         if len(value) != 3:  # YYYY-MM-DD
-            value = far_future  # Totally wrong.
+            value = far_future_date  # Totally wrong.
         else:
             value_out = []
             for v in value:  # Fields converted to integer or defaults to 1 (except year which defaults to this_year+10)
@@ -62,7 +62,7 @@ def correct_date(value, far_future):
                     v = -1
                 value_out.append(v)
             if value_out[0] == -1:
-                value_out[0] = far_future.year  # Totally wrong.
+                value_out[0] = far_future_date.year  # Totally wrong.
             if value_out[1] == -1:
                 value_out[1] = 12  # Last month of the year
             if value_out[2] == -1:
@@ -74,30 +74,27 @@ def correct_date(value, far_future):
 
 def sort_confs(confs):
     curr_date = date.today()
-    fields = [field for field, _ in sorted(events.items(), key=itemgetter(1))]  # Sorted for stability
+    fields = [field for field, _ in sorted(events.items(), key=itemgetter(1), reverse=True)]  # Go backwards
 
     for name, data in confs.items():
         curr_last_date = correct_date(data.get(event_order[-1], ''), far_future)
         sort_date, sort_field = curr_last_date, event_order[-1]
-        newest_date, newest_filed = far_past, event_order[0]
-        for field in fields:
+        for field in fields[1:]:  # The last date is the default
             field_val = correct_date(data.get(field, ''), curr_last_date)
-            if curr_date <= field_val < sort_date:  # The field_val is the nearest one in the future if there is any...
+            if curr_date <= field_val < sort_date:  # The field_val is the nearest one in the future if there is any
                 sort_date, sort_field = field_val, field  # Refine next upcomming date and event
-            if newest_date < field_val:  # Track the last event from a conference even if it is passed
-                newest_date, newest_filed = field_val, field
 
-        data['next_event'] = sort_field
-        data['{0}_date'.format(sort_field)] = sort_date
+        data['sort_date_date'] = sort_date
         data['sort_date'] = '{0}_{1}'.format(sort_date, events[sort_field])
 
     past_confs = []
     future_confs = []
     for name, data in sorted(confs.items(), key=lambda x: x[1]['sort_date']):
-        if data['{0}_date'.format(data['next_event'])] >= date.today():
-            future_confs.append((name, data))
+        # Conferences which have ended go unconditionally into the past...
+        if data['sort_date_date'] < curr_date:
+            past_confs.append((name, data))  # TODO: Confs ended on the same date are sorted in random order
         else:
-            past_confs.append((name, data))
+            future_confs.append((name, data))
 
     # New -> Old
     past_confs.reverse()

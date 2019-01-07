@@ -7,8 +7,10 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 sched = BlockingScheduler()
 
+
 @sched.scheduled_job('cron', hour=1)
 def scheduled_job():
     run_update(git_work_dir)
+
 
 sched.start()
