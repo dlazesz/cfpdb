@@ -41,7 +41,7 @@ There are multiple ways to setup your own instance:
 
 ## Architecture
 
-There is three independent (orphan) branches in this repository:
+There are three independent (orphan) branches in this repository:
 
 - _master_: contains the program and the setup instructions
 - _conferences_: stores _conferences.yaml_ that stores the conference data. Meant to be edited by the collaborators
