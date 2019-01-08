@@ -1,5 +1,5 @@
 # CFPDB -- A _Call for Papers_ Database for collaborative use
-A Call for Papers database which sorts confs and highlights due dates according to current date intended for collaborative use
+A Call for Papers database which sorts confs and highlights due dates according to the current date, intended for collaborative use
 
 The calendar is located at: https://dlazesz.github.io/cfpdb/
 
