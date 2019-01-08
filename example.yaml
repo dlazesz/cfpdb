@@ -18,7 +18,7 @@ print("Syntax OK!")
 %YAML 1.1
 ---
 COLING 2018:
-    start: 2018-08-20
+    begin: 2018-08-20
     end:   2018-08-25
     location: Santa Fe, New Mexico
     submission:   2018-03-16
@@ -28,7 +28,7 @@ COLING 2018:
     remark: |
 
 TSD 2018:
-    start: 2018-09-11
+    begin: 2018-09-11
     end:   2018-09-14
     location: Brno
     submission:   2018-03-15
@@ -40,7 +40,7 @@ TSD 2018:
         esetleg a hálót angolul ide? Benyomtam, elfogadták! (!) XXX :)
 
 MSZNY 2019:
-    start: 2019-01-24
+    begin: 2019-01-24
     end:   2019-01-25
     location: Szeged
     submission:   2018-11-15
@@ -51,7 +51,7 @@ MSZNY 2019:
         ez kell: háló impl! (!) XXX :) + vmi algókezdemény vele! :)
 
 NAACL 2019:
-    start: 2019-06-02
+    begin: 2019-06-02
     end:   2019-06-07
     location: Minneapolis, USA
     submission:   2018-12-03
@@ -61,7 +61,7 @@ NAACL 2019:
     remark: |
 
 ACL 2019:
-    start: 2019-07-28
+    begin: 2019-07-28
     end:   2019-08-02
     location: Florence, Italy
     submission:   2019-xx-xx
@@ -72,7 +72,7 @@ ACL 2019:
         ez kell: háló impl! (!) XXX :) + vmi algókezdemény vele! :)
 
 eLexicography 2019:
-    start: 2019-10-01
+    begin: 2019-10-01
     end:   2019-10-03
     location: Sintra, Portugal
     submission:   2019-02-15
@@ -84,7 +84,7 @@ eLexicography 2019:
         természetesen az (implemenált!) háló lexikográfiai alkalmazásával! :)
 
 TSD 2019:
-    start: 2019-09-xx
+    begin: 2019-09-xx
     end:   2019-09-xx
     location: Ljubljana, Slovenia
     submission:   2019-03-xx
