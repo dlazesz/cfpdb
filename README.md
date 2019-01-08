@@ -1,6 +1,6 @@
 # Conferences database
 
-Edit `conferences.yaml` to add new conferneces!
+Edit `conferences.yaml` to add new conferences!
 
 The resulting calendar can be viewed at: https://dlazesz.github.io/cfpdb/
 
