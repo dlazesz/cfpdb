@@ -56,7 +56,7 @@ When the updater process runs, it fetches `conferences.yaml` from the _conferenc
 ## History
 Code written between Nov 2008 and Nov 2010 by Bálint Sass
 
-Full rewrite in 2019 Jan by Balázs Indig
+Full rewrite in Jan 2019 by Balázs Indig
 
 ## Acknowledgement
 
