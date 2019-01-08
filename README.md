@@ -1,5 +1,5 @@
 # CFPDB -- A _Call for Papers_ Database for collaborative use
-A Call for Papers database which sorts confs and highlights due dates according to the current date, intended for collaborative use
+CFPDB is a Call for Papers database which sorts conferences and highlights due dates according to the current date, intended for collaborative use.
 
 The calendar is located at: https://dlazesz.github.io/cfpdb/
 
@@ -8,27 +8,32 @@ The _iCalendar_ format is located at: https://raw.githubusercontent.com/dlazesz/
 
 ## Usage
 
-1) Edit [conferences.yaml in the conferences branch of this repository](https://github.com/dlazesz/cfpdb/blob/conferences/conferences.yaml)
-2) Wait till 01:00 CET for the calendar to refresh
-3) View the calendar at: https://dlazesz.github.io/cfpdb/
+1) Edit [conferences.yaml in the _conferences_ branch of this repository](https://github.com/dlazesz/cfpdb/blob/conferences/conferences.yaml)
+2) The calendar will be refreshed at 01:00 CET
+3) Check the calendar at: https://dlazesz.github.io/cfpdb/ or subscribe to the following iCalendar file: https://raw.githubusercontent.com/dlazesz/cfpdb/gh-pages/conferences.ics
+
+### Using the _iCalendar_ file with [Google Calendar](https://calendar.google.com)
+
+1) Go to https://calendar.google.com
+2) In the left menu select the three vertical dots on the left of _Add a friend's calendar_
+3) Select _Add by URL_
+4) Insert the URL of the provided ics file (see above) and click _Add calendar_ 
 
 ## Setup
 
-There are multiple ways to setup your own instance:
+1. [Setup the key-based access to github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) and copy [your private key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) to the `private_key` file
+2. Set [the proper github repository name (the SSH variant of the remote url)](https://help.github.com/articles/which-remote-url-should-i-use/) in: [`update_cfpdb_on_github.py`](https://github.com/dlazesz/cfpdb/blob/master/update_cfpdb_on_github.py#L22)
+3. Setup a scheduled task to run the update:
 
-- Run the program in cron: HOME=$HOME $HOME/cfpbd/run_update_in_venv.py >> $HOME/cfpbd/update.log 2>&1
-- Run the program in virtualenv: run_update_in_venv.py
-- Run the program manually and push the changes: update_cfpdb_on_github.py
-- Run the program manually to see the changes locally: generate_html.py
-- Run the program on Heroku: clock.py
-
-1. Setup key-based access to github. Copy private key to private_key file
-2. Set the proper github repository name in: update_cfpdb_on_github.py
-3. Setup scheduled task eg. in cron
+    - Run the program in [`cron`](https://www.raspberrypi.org/documentation/linux/usage/cron.md): `HOME=$HOME $HOME/cfpbd/run_update_in_venv.py >> $HOME/cfpbd/update.log 2>&1`
+    - Run the program in `virtualenv`: `run_update_in_venv.py`
+    - Run the program manually and push the changes: `update_cfpdb_on_github.py`
+    - Run the program manually to see the changes locally: `generate_html.py`
+    - Run the program on Heroku: `clock.py`
 
 ## Install to Heroku
 
-  - Register
+  - Sign up
   - Download and install Heroku CLI
   - Login to Heroku from the CLI
   - Create an app
@@ -44,23 +49,23 @@ There are multiple ways to setup your own instance:
 There are three independent (orphan) branches in this repository:
 
 - _master_: contains the program and the setup instructions
-- _conferences_: stores _conferences.yaml_ that stores the conference data. Meant to be edited by the collaborators
+- _conferences_: contains _conferences.yaml_ which stores the conference data (it is meant to be edited by the collaborators)
 - _gh-pages_: stores the rendered html file for the calendar to be shown as https://USERNAME.github.io/REPONAME
 
-When the updater process runs, it fetches `conferences.yaml` from the _conferences_ branch in this repository and pushes the rendered html to _gh-pages_ branch
+The updater process fetches `conferences.yaml` from the _conferences_ branch in this repository and pushes the rendered html to the _gh-pages_ branch.
 
 ## New features
 
-- iCalendar file (.ics) generation which can be subscribed to
+- iCalendar file (.ics) generation which can be subscribed to (see description)
 
 ## History
 Code written between Nov 2008 and Nov 2010 by Bálint Sass
 
-Full rewrite in Jan 2019 by Balázs Indig
+Full revision in Jan 2019 by Balázs Indig
 
 ## Acknowledgement
 
-The Author would like to express his sincere gratitude to Bálint Sass for open sourcing the original program and enabling others to use and develop it further and keep this nice idea rocking!
+I would like to express my gratitude to Bálint Sass for open sourcing the original program and enabling others to use and develop it.
 
 ## License
 
