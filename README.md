@@ -60,7 +60,7 @@ Full rewrite in Jan 2019 by Balázs Indig
 
 ## Acknowledgement
 
-The Author would like to express his sincere gratitude for Bálint Sass for open sourcing the original program and enabling others to use and develop it further and keep this nice idea rocking!
+The Author would like to express his sincere gratitude to Bálint Sass for open sourcing the original program and enabling others to use and develop it further and keep this nice idea rocking!
 
 ## License
 
