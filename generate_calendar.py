@@ -89,7 +89,7 @@ def sort_confs(confs):
 
     past_confs = []
     future_confs = []
-    for name, data in sorted(confs.items(), key=lambda x: x[1]['sort_date']):
+    for name, data in sorted(confs.items(), key=lambda x: (x[1]['sort_date'], x[0])):  # Stabilize sort
         # Conferences which have ended go unconditionally into the past...
         if data['sort_date_date'] < curr_date:
             past_confs.append((name, data))  # TODO: Confs ended on the same date are sorted in random order

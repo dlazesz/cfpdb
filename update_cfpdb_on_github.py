@@ -50,7 +50,7 @@ def run_update(work_dir):
     # add result
     repo.index.add(['index.html', 'conferences.ics'])
 
-    if len(repo.index.diff('HEAD')) > 0:
+    if len(repo.index.diff('HEAD')) > 1:  # The ics file generation is not reproducible so it does not count!
         # commit result
         author = Actor("CFP Updater Bot", "this.bot.h@s.no.email")
         repo.index.commit('Update on {0}'.format(date.today().isoformat()), author=author, committer=author)
