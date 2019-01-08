@@ -14,7 +14,7 @@ The _iCalendar_ format is located at: https://raw.githubusercontent.com/dlazesz/
 
 ## Setup
 
-There is multiple way to setup your own instance:
+There are multiple ways to setup your own instance:
 
 - Run the program in cron: HOME=$HOME $HOME/cfpbd/run_update_in_venv.py >> $HOME/cfpbd/update.log 2>&1
 - Run the program in virtualenv: run_update_in_venv.py
