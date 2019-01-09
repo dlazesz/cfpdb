@@ -19,6 +19,13 @@ The _iCalendar_ format is located at: https://raw.githubusercontent.com/dlazesz/
 3) Select _Add by URL_
 4) Insert the URL of the provided ics file (see above) and click _Add calendar_ 
 
+### Using the _iCalendar_ file with _Android_
+
+1) Install [ICSX5 (formely ICSDroid)](https://icsx5.bitfire.at/) from [Play store](https://play.google.com/store/apps/details?id=at.bitfire.icsdroid&hl=en_US), [YALP store](https://f-droid.org/en/packages/com.github.yeriomin.yalpstore/) or [F-droid](https://f-droid.org/en/packages/at.bitfire.icsdroid/)
+2) Add the URL of the provided ics file (see above)
+3) Set name and color
+4) Set update frequency if needed 
+
 ## Setup
 
 1. [Setup the key-based access to github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) and copy [your private key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) to the `private_key` file
