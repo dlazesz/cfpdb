@@ -17,6 +17,18 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+
+"21. Pszicholingvisztikai Nyári Egyetem":
+    begin: 2019-05-26
+    end:   2019-01-30
+    location: Balatonalmádi
+    submission:   2018-02-28
+    notification: 2018-03-15
+    camera-ready:
+    url: 
+    remark: |
+        ...
+
 "MSZNY 2019":
     begin: 2019-01-24
     end:   2019-01-25
@@ -150,9 +162,9 @@ print("Syntax OK!")
         ...
 
 "LREC 2020":
-    begin: 2020-05-xx
-    end:   2020-05-xx
-    location: XX
+    begin: 2020-05-11
+    end:   2020-05-16
+    location: Marseille, France
     submission:   2019-10-xx
     notification: 
     camera-ready: 
