@@ -77,9 +77,9 @@ print("Syntax OK!")
     begin: 2019-05-17
     end:   2019-05-19
     location: Poznan
-    submission:   2019-02-20
-    notification: 2019-03-14
-    camera-ready: 2019-04-02
+    submission:   2019-03-20
+    notification: 2019-04-02
+    camera-ready: 2019-04-15
     url: http://ltc.amu.edu.pl
     remark: |
         ...
@@ -165,7 +165,7 @@ print("Syntax OK!")
     begin: 2020-05-11
     end:   2020-05-16
     location: Marseille, France
-    submission:   2019-10-xx
+    submission:   2019-10-25
     notification: 
     camera-ready: 
     url: http://www.lrec-conf.org
