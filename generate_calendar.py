@@ -131,7 +131,7 @@ def print_conf(pos, name, data, out_stream=sys.stdout, alert=False):
 
     submission = format_alert(data['sort_date'], data['submission'], '#ffd0d0',
                               alert and alert_event == events['submission'])
-    notification = format_alert(data['sort_date'], data['notification'], '#f8f8d0',
+    notification = format_alert(data['sort_date'], data['notification'], '#f1f1a3',
                                 alert and alert_event == events['notification'])
     camera_ready = format_alert(data['sort_date'], data['camera-ready'], '#d0f0d0',
                                 alert and alert_event == events['camera-ready'])
