@@ -8,7 +8,7 @@ from datetime import date
 
 from git import Repo, Actor
 
-git_work_dir = 'repo_test'
+git_work_dir = 'cfpdb_repo'
 
 
 def run_update(work_dir):
@@ -18,19 +18,8 @@ def run_update(work_dir):
     # Clean work_dir
     shutil.rmtree(abs_work_dir, ignore_errors=True)
 
-    # Clone master
-    repo = Repo.clone_from('git@github.com:dlazesz/cfpdb.git', abs_work_dir, branch='master')
-
-    # Clone the other branches
-    repo.git.checkout('--track', 'origin/conferences')
-    repo.git.checkout('--track', 'origin/gh-pages')
-
-    # Get back to master branch
-    repo.git.checkout('master')
-
-    # Get the lastest YAML file but remove it from index
-    repo.git.checkout('conferences', '--', 'conferences.yaml')
-    repo.git.reset()
+    # Clone master  # TODO: Depth and no-single-branch together as parameter to reduce bandwidth usage...
+    repo = Repo.clone_from('git@github.com:dlazesz/cfpdb.git', abs_work_dir, branch='conferences')
 
     # Go into the git working dir and also add it to modulepath!
     os.chdir(abs_work_dir)
