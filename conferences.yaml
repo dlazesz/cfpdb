@@ -18,6 +18,17 @@ print("Syntax OK!")
 %YAML 1.1
 ---
 
+"Trans-linguistica 5.":
+    begin: 2019-05-30
+    end:   2019-05-31
+    location: Marosvásárhely
+    submission:   2019-03-15
+    notification: 2019-03-31
+    camera-ready:
+    url: https://ms.sapientia.ro/en/news/trans-linguistica-5
+    remark: |
+        ...
+
 "21. Pszicholingvisztikai Nyári Egyetem":
     begin: 2019-05-26
     end:   2019-05-30
