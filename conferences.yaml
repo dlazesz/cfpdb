@@ -18,6 +18,50 @@ print("Syntax OK!")
 %YAML 1.1
 ---
 
+"DeriMo 2019":
+    begin: 2019-09-19
+    end:   2019-09-20
+    location: Prága
+    submission:   2019-05-24
+    notification: 2019-06-30
+    camera-ready: 2019-08-15
+    url: http://ufal.mff.cuni.cz/derimo2019/index.php
+    remark: |
+        ...
+
+"CLARIN Annual Conference 2019":
+    begin: 2019-09-30
+    end:   2019-10-02
+    location: Lipcse
+    submission:   2019-04-15
+    notification: 2019-06-01
+    camera-ready: 2019-08-26
+    url: https://www.clarin.eu/event/2019/clarin-annual-conference-2019-leipzig-germany
+    remark: |
+        ...
+
+"SIGMORPHON 2019":
+    begin: 2019-08-02
+    end:   2019-08-02
+    location: Florence, Italy
+    submission:   2019-04-15
+    notification: 2019-05-15
+    camera-ready: 2019-05-29
+    url: https://sigmorphon.github.io/workshops/2019/
+    remark: |
+        ...
+
+"SyntaxFest 2019":
+    begin: 2019-08-26
+    end:   2019-08-30
+    location: Párizs
+    submission:   2019-04-28
+    notification: 
+    camera-ready:
+    url: https://syntaxfest.github.io/syntaxfest19/index.html
+    remark: |
+        ...
+
 "Trans-linguistica 5.":
     begin: 2019-05-30
     end:   2019-05-31
@@ -90,7 +134,7 @@ print("Syntax OK!")
     location: Poznan
     submission:   2019-03-20
     notification: 2019-04-02
-    camera-ready: 2019-04-15
+    camera-ready: 2019-04-12
     url: http://ltc.amu.edu.pl
     remark: |
         ...
@@ -129,8 +173,8 @@ print("Syntax OK!")
         ...
 
 "TSD 2019":
-    begin: 2019-09-xx
-    end:   2019-09-xx
+    begin: 2019-09-10
+    end:   2019-09-13
     location: Ljubljana, Slovenia
     submission:   2019-03-31
     notification: 2019-05-10
@@ -151,10 +195,10 @@ print("Syntax OK!")
         ...
 
 "RANLP 2019":
-    begin: 2019-08-31
+    begin: 2019-08-29
     end:   2019-09-06
     location: Varna, Bulgaria
-    submission:   2019-04-xx
+    submission:   2019-05-08
     notification: 2019-06-26
     camera-ready: 2019-07-31
     url: http://lml.bas.bg/ranlp2019
@@ -176,10 +220,10 @@ print("Syntax OK!")
     begin: 2020-05-11
     end:   2020-05-16
     location: Marseille, France
-    submission:   2019-10-25
+    submission:   2019-11-25
     notification: 
     camera-ready: 
-    url: http://www.lrec-conf.org
+    url: https://lrec2020.lrec-conf.org/
     remark: |
         ...
 
