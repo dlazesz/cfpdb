@@ -18,6 +18,17 @@ print("Syntax OK!")
 %YAML 1.1
 ---
 
+"SLSP 2019":
+    begin: 2019-10-14
+    end:   2019-10-16
+    location: Ljubjana, Szlovénia
+    submission:   2019-06-01
+    notification: 2019-07-08
+    camera-ready: 2019-07-15
+    url: http://slsp2019.irdta.eu/
+    remark: |
+        ...
+
 "DeriMo 2019":
     begin: 2019-09-19
     end:   2019-09-20
