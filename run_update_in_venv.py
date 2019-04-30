@@ -12,6 +12,6 @@ activate_this = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'bin', 
 with open(activate_this) as file_:
     exec(file_.read(), dict(__file__=activate_this))
 
-from update_cfpdb_on_github import run_update, git_work_dir
+from update_cfpdb_on_github import run_update, git_work_dir, github_repo_name
 
-run_update(git_work_dir)
+run_update(git_work_dir, github_repo_name)
