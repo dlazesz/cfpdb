@@ -194,7 +194,18 @@ print("Syntax OK!")
     remark: |
         ...
 
-"MWE WS 2019":
+"ACL 2019 WS: LAW":
+    begin: 2019-08-01
+    end:   2019-08-02
+    location: Florence, Italy
+    submission:   2019-04-12
+    notification: 2019-05-16
+    camera-ready: 2019-05-31
+    url: https://sigann.github.io/LAW-XIII-2019
+    remark: |
+        ...
+
+"ACL 2019 WS: MWE":
     begin: 2019-08-02
     end:   2019-08-02
     location: Florence, Italy
