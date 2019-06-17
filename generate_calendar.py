@@ -81,7 +81,7 @@ def sort_confs(confs):
         sort_date, sort_field = curr_last_date, event_order[-1]
         for field in fields[1:]:  # The last date is the default
             field_val = correct_date(data.get(field, ''), curr_last_date)
-            if curr_date <= field_val < sort_date:  # The field_val is the nearest one in the future if there is any
+            if curr_date <= field_val <= sort_date:  # The field_val is the nearest one in the future if there is any
                 sort_date, sort_field = field_val, field  # Refine next upcomming date and event
 
         data['sort_date_date'] = sort_date
