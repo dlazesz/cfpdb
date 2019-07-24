@@ -18,6 +18,72 @@ print("Syntax OK!")
 %YAML 1.1
 ---
 
+"CICLing 2020":
+    begin: 2020-02-XX
+    end:   2020-02-XX
+    location: Jaipur, India
+    submission:   2019-XX-XX
+    notification: 2019-XX-XX
+    camera-ready: 2019-XX-XX
+    url: https://www.cicling.org
+    remark: |
+        ...
+
+"14th International Conference on Linguistic Resources and Tools for Natural Language Processing (ConsILR 2019)":
+    begin: 2019-11-18
+    end:   2019-11-20
+    location: Cluj-Napoca, Romania
+    submission:   2019-09-09
+    notification: 2019-10-07
+    camera-ready: 2019-10-28
+    url: https://profs.info.uaic.ro/~consilr/
+    remark: |
+        ...
+
+"Third Cultural Linguistics International Conference (CLIC 2020)":
+    begin: 2020-06-17
+    end:   2020-06-19
+    location: Budapest, Hungary
+    submission:   2019-11-15
+    notification: 2020-XX-XX
+    camera-ready: 2020-XX-XX
+    url: http://scitope.com/clic-2020/
+    remark: |
+        ...
+
+"Empirical Studies of Word Sense Divergences across Language Varieties":
+    begin: 2020-03-04
+    end:   2020-02-06
+    location: Hamburg, Germany
+    submission:   2019-08-26
+    notification: 2020-XX-XX
+    camera-ready: 2020-XX-XX
+    url: https://www.ims.uni-stuttgart.de/events/dgfs-20-ws/
+    remark: |
+        ...
+
+"XIV. Alkalmazott Nyelvészeti Doktoranduszkonferencia (AlkNyelvDok 2020)":
+    begin: 2020-02-07
+    end:   2020-02-07
+    location: Budapest, Hungary
+    submission:   2019-12-08
+    notification: 2020-XX-XX
+    camera-ready: 2020-XX-XX
+    url: http://www.nytud.hu/alknyelvdok20/
+    remark: |
+        ...
+
+"XIII International Congress for Finno-Ugric Studies -- Uralic nominal structures: noun phrases and nominal sentences":
+    begin: 2020-08-16
+    end:   2020-08-21
+    location: Vienna, Austria
+    submission:   2019-09-30
+    notification: 2020-03-01
+    camera-ready: 2020-XX-XX
+    url: https://cifu13.univie.ac.at/programme/symposia/#B6
+    remark: |
+        ...
+
 "SLSP 2019":
     begin: 2019-10-14
     end:   2019-10-16
@@ -109,7 +175,7 @@ print("Syntax OK!")
 "CICLing 2019":
     begin: 2019-04-07
     end:   2019-04-13
-    location: La Rochelle
+    location: La Rochelle, France
     submission:   2019-01-10
     notification: 2019-02-20
     camera-ready: 2019-03-01
