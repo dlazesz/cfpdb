@@ -17,6 +17,16 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"COLING 2020":
+    begin: 2020-09-15
+    end:   2020-09-18
+    location: Santa Fe, New Mexico
+    submission:   2020-04-08
+    notification: 2020-06-10
+    camera-ready: 2020-06-30
+    url: http://coling2020.org
+    remark: |
+        ...
 
 "MSZNY 2020":
     begin: 2020-01-23
