@@ -18,9 +18,9 @@ print("Syntax OK!")
 %YAML 1.1
 ---
 "COLING 2020":
-    begin: 2020-09-15
+    begin: 2020-09-13
     end:   2020-09-18
-    location: Santa Fe, New Mexico
+    location: Barcelona, Spain
     submission:   2020-04-08
     notification: 2020-06-10
     camera-ready: 2020-06-30
