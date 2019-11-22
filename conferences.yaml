@@ -17,14 +17,25 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
-"COMPTEXT 2020":
-    begin: 2020-05-15
-    end:   2020-05-16
-    location: Innsbruck,  Austria
-    submission:   2020-01-15
-    notification: 2020-02-15
-    camera-ready: 2020-05-07
-    url: http://www.comptextconference.org/3rd-annual-poltext-conference-2020/
+"EMNLP 2020":
+    begin: 2020-11-08
+    end:   2020-11-12
+    location: Punta Cana, Dominican Republic
+    submission:   2020-..-..
+    notification: 2020-..-..
+    camera-ready: 2020-..-..
+    url: http://...
+    remark: |
+        ...
+
+"MWE-LEX 2020":
+    begin: 2020-09-14
+    end:   2020-09-14
+    location: Barcelona, Spain
+    submission:   2020-05-20
+    notification: 2020-06-24
+    camera-ready: 2020-07-11
+    url: http://multiword.sourceforge.net/mwelex2020
     remark: |
         ...
 
@@ -39,11 +50,33 @@ print("Syntax OK!")
     remark: |
         ...
 
+"ACL 2020":
+    begin: 2020-07-05
+    end:   2020-07-10
+    location: Seattle, Washington, USA
+    submission:   2019-12-09
+    notification: 2020-04-03
+    camera-ready: 2020-04-24
+    url: http://acl2020.org
+    remark: |
+        ...
+
+"COMPTEXT 2020":
+    begin: 2020-05-15
+    end:   2020-05-16
+    location: Innsbruck, Austria
+    submission:   2020-01-15
+    notification: 2020-02-15
+    camera-ready: 2020-05-07
+    url: http://www.comptextconference.org/3rd-annual-poltext-conference-2020/
+    remark: |
+        ...
+
 "MSZNY 2020":
     begin: 2020-01-23
     end:   2020-01-24
     location: Szeged
-    submission:   2019-11-14
+    submission:   2019-11-17
     notification: 2019-12-13
     camera-ready: 2020-01-05
     url: https://tinyurl.com/y4ywtwnc
@@ -85,7 +118,7 @@ print("Syntax OK!")
 
 "Empirical Studies of Word Sense Divergences across Language Varieties":
     begin: 2020-03-04
-    end:   2020-02-06
+    end:   2020-03-06
     location: Hamburg, Germany
     submission:   2019-08-26
     notification: 2020-XX-XX
@@ -340,7 +373,7 @@ print("Syntax OK!")
     begin: 2020-05-11
     end:   2020-05-16
     location: Marseille, France
-    submission:   2019-11-25
+    submission:   2019-12-02
     notification: 
     camera-ready: 
     url: https://lrec2020.lrec-conf.org/
