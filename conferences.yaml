@@ -374,8 +374,8 @@ print("Syntax OK!")
     end:   2020-05-16
     location: Marseille, France
     submission:   2019-12-02
-    notification: 
-    camera-ready: 
+    notification: 2020-02-13
+    camera-ready: 2020-03-06
     url: https://lrec2020.lrec-conf.org/
     remark: |
         ...
