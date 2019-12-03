@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"TSD 2020":
+    begin: 2020-09-08
+    end:   2020-09-11
+    location: Brno, Czech Republic
+    submission:   2020-03-15
+    notification: 2020-05-16
+    camera-ready: 2020-05-31
+    url: http://www.tsdconference.org/tsd2020/welcome.html
+    remark: |
+        ...
+
 "EMNLP 2020":
     begin: 2020-11-08
     end:   2020-11-12
