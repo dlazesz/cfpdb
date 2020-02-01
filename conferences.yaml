@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"The Olomouc Linguistics Colloquium (Olinco) 2020":
+    begin: 2020-07-11
+    end:   2020-07-13
+    location: Palacký University Olomouc, Czech Republic
+    submission:   2020-01-31
+    notification: 2020-03-15
+    camera-ready: 2020-05-01
+    url: http://olinco.upol.cz/
+    remark: |
+        ...
+
 "1st WS on Resources for African Indigenous Language (RAIL)":
     begin: 2020-05-16
     end:   2020-05-16
