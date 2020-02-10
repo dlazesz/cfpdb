@@ -197,9 +197,9 @@ print("Syntax OK!")
     begin: 2020-02-07
     end:   2020-02-07
     location: Budapest, Hungary
-    submission:   2019-12-08
-    notification: 2020-XX-XX
-    camera-ready: 2020-XX-XX
+    submission:   2019-12-18
+    notification: 2020-01-10
+    camera-ready: 2020-03-08
     url: http://www.nytud.hu/alknyelvdok20/
     remark: |
         ...
@@ -649,9 +649,9 @@ print("Syntax OK!")
     end:   2017-09-01
     location: Debrecen
     submission:   2016-11-30
-    notification: 
-    camera-ready: 
-    url: 
+    notification: 2017-XX-XX
+    camera-ready: 2017-XX-XX
+    url: http://icos2017.unideb.hu/en/
     remark: |
         ...
 
@@ -678,13 +678,13 @@ print("Syntax OK!")
         ...
 
 "EACL 2017 WS: Shared task on VMWEs":
-    begin: 2017-04-xx
-    end:   2017-04-xx
+    begin: 2017-04-04
+    end:   2017-04-04
     location: Valencia, Spain
     submission:   2017-01-27
     notification: 2017-02-12
     camera-ready: 2017-02-19
-    url: http://tinyurl.com/z8jw923
+    url: http://multiword.sourceforge.net/PHITE.php?sitesig=CONF&page=CONF_05_MWE_2017___lb__EACL__rb__&subpage=CONF_40_Shared_Task
     remark: |
         ...
 
@@ -738,8 +738,8 @@ print("Syntax OK!")
     location: Austin, Texas
     submission:   2016-06-03
     notification: 2016-07-10
-    camera-ready: 
-    url: http://www.emnlp2016.net
+    camera-ready: 2016-07-29
+    url: https://www.aclweb.org/mirror/emnlp2016/call.html
     remark: |
         ...
 
