@@ -17,12 +17,23 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"12th Web as Corpus Workshop (WAC-XII)":
+    begin: 2020-05-16
+    end:   2020-05-16
+    location: Marseille, France
+    submission:   2020-02-16
+    notification: 2020-03-13
+    camera-ready: 2020-03-27
+    url: https://www.sigwac.org.uk/wiki/WAC-XII
+    remark: |
+        ...
+
 "The Olomouc Linguistics Colloquium (Olinco) 2020":
     begin: 2020-07-11
     end:   2020-07-13
     location: Palacký University Olomouc, Czech Republic
-    submission:   2020-01-31
-    notification: 2020-03-15
+    submission:   2020-02-17
+    notification: 2020-03-24
     camera-ready: 2020-05-01
     url: http://olinco.upol.cz/
     remark: |
@@ -54,10 +65,10 @@ print("Syntax OK!")
     begin: 2020-11-08
     end:   2020-11-12
     location: Punta Cana, Dominican Republic
-    submission:   2020-..-..
-    notification: 2020-..-..
-    camera-ready: 2020-..-..
-    url: http://...
+    submission:   2020-05-11
+    notification: 2020-08-08
+    camera-ready: 2020-08-28
+    url: https://2020.emnlp.org/
     remark: |
         ...
 
@@ -165,8 +176,8 @@ print("Syntax OK!")
     end:   2020-06-19
     location: Budapest, Hungary
     submission:   2019-11-15
-    notification: 2020-XX-XX
-    camera-ready: 2020-XX-XX
+    notification: 2020-01-05
+    camera-ready: 2020-03-01
     url: http://scitope.com/clic-2020/
     remark: |
         ...
@@ -175,9 +186,9 @@ print("Syntax OK!")
     begin: 2020-03-04
     end:   2020-03-06
     location: Hamburg, Germany
-    submission:   2019-08-26
-    notification: 2020-XX-XX
-    camera-ready: 2020-XX-XX
+    submission:   2019-03-03
+    notification: 2020-09-12
+    camera-ready: 2020-09-30
     url: https://www.ims.uni-stuttgart.de/events/dgfs-20-ws/
     remark: |
         ...
