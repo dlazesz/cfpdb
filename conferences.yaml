@@ -17,6 +17,39 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"Machine Learning and Natural Language Processing: Models, Systems, Data and Applications (MNLP 2020)":
+    begin: 2020-12-12
+    end:   2020-12-18
+    location: Agadir, Morocco
+    submission:   2020-06-28
+    notification: 2020-08-30
+    camera-ready: 2020-09-13
+    url: http://www.ieee.ma/cist20/special-invited-sessions/nlp
+    remark: |
+        ...
+
+"4th International Conference on Computational Linguistics in Bulgaria (CLIB 2020)":
+    begin: 2020-06-08
+    end:   2020-06-09
+    location: Sofia, Bulgaria
+    submission:   2020-03-15
+    notification: 2020-05-01
+    camera-ready: 2020-05-15
+    url: http://dcl.bas.bg/clib/call-for-papers/
+    remark: |
+        ...
+
+"36th Annual Spanish Society for Natural Language Processing Congress (SEPLN 2020)":
+    begin: 2020-09-23
+    end:   2020-09-25
+    location: Málaga, Spain
+    submission:   2020-03-22
+    notification: 2020-05-08
+    camera-ready: 2020-05-22
+    url: http://sepln2020.sepln.org/index.php/en/papers/
+    remark: |
+        ...
+
 "12th Web as Corpus Workshop (WAC-XII)":
     begin: 2020-05-16
     end:   2020-05-16
