@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"22. Pszicholingvisztikai Nyári Egyetem":
+    begin: 2019-05-24
+    end:   2019-05-28
+    location: Balatonalmádi
+    submission:   2018-03-07
+    notification: 2018-03-15
+    camera-ready:
+    url: https://pnye.mftk.uni-pannon.hu/
+    remark: |
+        ...
+
 "Machine Learning and Natural Language Processing: Models, Systems, Data and Applications (MNLP 2020)":
     begin: 2020-12-12
     end:   2020-12-18
@@ -243,7 +254,7 @@ print("Syntax OK!")
     location: Vienna, Austria
     submission:   2019-09-30
     notification: 2020-03-01
-    camera-ready: 2020-XX-XX
+    camera-ready:
     url: https://cifu13.univie.ac.at/programme/symposia/#B6
     remark: |
         ...
