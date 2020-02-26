@@ -17,12 +17,23 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"8th International Conference on Statistical Language and Speech Processing (SLSP 2020)":
+    begin: 2020-10-14
+    end:   2020-10-16
+    location: Cardiff, UK
+    submission:   2020-06-01
+    notification: 2020-07-06
+    camera-ready: 2020-07-15
+    url: https://pnye.mftk.uni-pannon.hu/
+    remark: |
+        ...
+
 "22. Pszicholingvisztikai Nyári Egyetem":
-    begin: 2019-05-24
-    end:   2019-05-28
+    begin: 2020-05-24
+    end:   2020-05-28
     location: Balatonalmádi
-    submission:   2018-03-07
-    notification: 2018-03-15
+    submission:   2020-03-07
+    notification: 2020-03-15
     camera-ready:
     url: https://pnye.mftk.uni-pannon.hu/
     remark: |
