@@ -139,12 +139,12 @@ print("Syntax OK!")
         ...
 
 "COLING 2020":
-    begin: 2020-09-13
-    end:   2020-09-18
+    begin: 2020-12-08
+    end:   2020-12-13
     location: Barcelona, Spain
-    submission:   2020-04-08
-    notification: 2020-06-10
-    camera-ready: 2020-06-30
+    submission:   2020-07-01
+    notification: 2020-10-01
+    camera-ready: 2020-11-01
     url: http://coling2020.org
     remark: |
         ...
