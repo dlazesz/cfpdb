@@ -117,23 +117,23 @@ print("Syntax OK!")
         ...
 
 "EMNLP 2020":
-    begin: 2020-11-08
-    end:   2020-11-12
+    begin: 2020-11-16
+    end:   2020-11-20
     location: Punta Cana, Dominican Republic
-    submission:   2020-05-11
-    notification: 2020-08-08
-    camera-ready: 2020-08-28
+    submission:   2020-06-01
+    notification: 2020-09-14
+    camera-ready: 2020-xx-xx
     url: https://2020.emnlp.org/
     remark: |
         ...
 
 "MWE-LEX 2020":
-    begin: 2020-09-14
-    end:   2020-09-14
+    begin: 2020-12-13
+    end:   2020-12-13
     location: Barcelona, Spain
-    submission:   2020-05-20
-    notification: 2020-06-24
-    camera-ready: 2020-07-11
+    submission:   2020-09-02
+    notification: 2020-10-16
+    camera-ready: 2020-11-01
     url: http://multiword.sourceforge.net/mwelex2020
     remark: |
         ...
@@ -153,7 +153,7 @@ print("Syntax OK!")
     begin: 2020-09-08
     end:   2020-09-11
     location: Brno, Czech Republic
-    submission:   2020-04-10
+    submission:   2020-04-27
     notification: 2020-06-05
     camera-ready: 2020-06-15
     url: http://www.tsdconference.org/tsd2020/welcome.html
