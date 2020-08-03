@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"7th Young Linguists' Meeting in Poznan (YLMP 2021)":
+    begin: 2021-04-23
+    end:   2021-04-25
+    location: Poznan, Poland
+    submission:   2020-11-13
+    notification: 2021-01-11
+    camera-ready: 2021-02-28
+    url: http://ylmp2021.amu.edu.pl/
+    remark: |
+        ...
+
 "8th International Conference on Statistical Language and Speech Processing (SLSP 2020)":
     begin: 2020-10-14
     end:   2020-10-16
