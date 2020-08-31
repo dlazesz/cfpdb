@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"LingDokKonf 24.":
+    begin: 2020-11-19
+    end:   2020-11-20
+    location: Szeged, Hungary
+    submission:   2020-10-05
+    notification: 2021-10-26
+    camera-ready: 2021-10-26
+    url: http://nydi.szte.hu/LingDok.html
+    remark: |
+        ...
+
 "7th Young Linguists' Meeting in Poznan (YLMP 2021)":
     begin: 2021-04-23
     end:   2021-04-25
