@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"MSZNY 2021":
+    begin: 2021-01-28
+    end:   2021-01-29
+    location: Szeged, Hungary
+    submission:   2020-11-13
+    notification: 2020-12-11
+    camera-ready: 2021-01-08
+    url: https://rgai.inf.u-szeged.hu/mszny/mszny2021
+    remark: |
+        ...
+
 "LingDokKonf 24.":
     begin: 2020-11-19
     end:   2020-11-20
