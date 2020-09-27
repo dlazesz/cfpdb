@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"XV. Alkalmazott Nyelvészeti Doktoranduszkonferencia (AlkNyelvDok 2021)":
+    begin: 2021-02-05
+    end:   2021-02-05
+    location: Budapest, Hungary
+    submission:   2020-12-04
+    notification: 2021-01-08
+    camera-ready: 2020-03-05
+    url: http://www.nytud.hu/alknyelvdok20/
+    remark: |
+        ...
+
 "MSZNY 2021":
     begin: 2021-01-28
     end:   2021-01-29
