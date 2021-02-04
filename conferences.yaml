@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"22. Pszicholingvisztikai Nyári Egyetem (online, 2021)":
+    begin: 2021-05-25
+    end:   2021-05-26
+    location: Balatonalmádi
+    submission:   2021-03-07
+    notification: 2021-03-15
+    camera-ready:
+    url: https://pnye.mftk.uni-pannon.hu/
+    remark: |
+        ...
+
 "XV. Alkalmazott Nyelvészeti Doktoranduszkonferencia (AlkNyelvDok 2021)":
     begin: 2021-02-05
     end:   2021-02-05
