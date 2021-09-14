@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"LREC 2022":
+    begin: 2022-06-20
+    end:   2022-06-25
+    location: Marseille, France
+    submission:   2022-01-10
+    notification: 2022-04-??
+    camera-ready: 2022-04-??
+    url: http://www.elra.info/en/lrec/lrec-2022/
+    remark: |
+        ...
+
 "22. Pszicholingvisztikai Nyári Egyetem (online, 2021)":
     begin: 2021-05-25
     end:   2021-05-26
