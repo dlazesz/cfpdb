@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"MSZNY 2022":
+    begin: 2022-01-27
+    end:   2022-01-28
+    location: Szeged, Hungary
+    submission:   2021-11-19
+    notification: 2021-12-17
+    camera-ready: 2021-01-10
+    url: https://rgai.inf.u-szeged.hu/mszny2022
+    remark: |
+        ...
+
 "LREC 2022":
     begin: 2022-06-20
     end:   2022-06-25
