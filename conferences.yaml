@@ -17,6 +17,16 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"ACL 2022":
+    begin: 2022-05-22
+    end:   2022-05-27
+    location: Dublin, Ireland
+    submission:   2021-11-15
+    notification: 2022-02-20
+    camera-ready: 2022-03-15
+    url: https://www.2022.aclweb.org/
+    remark: |
+        ...
 "MSZNY 2022":
     begin: 2022-01-27
     end:   2022-01-28
