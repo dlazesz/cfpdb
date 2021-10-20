@@ -17,6 +17,14 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"Össznyelvész 2021":
+    begin: 2021-12-17
+    end: 2021-12-18
+    location: Budapest, Hungary
+    submission: 2021-11-07
+    url: https://ossznyelvesz.elte.hu/
+    remark: |
+        ...
 "ACL 2022":
     begin: 2022-05-22
     end:   2022-05-27
