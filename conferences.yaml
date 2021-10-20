@@ -17,6 +17,15 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"CILC 2022":
+    begin: 2022-05-26
+    end: 2022-05-28
+    location: Bergamo, Italy
+    submission: 2021-12-31
+    notification: 2022-03-01
+    url: https://dllcs.unibg.it/it/seminari-e-convegni/convegni-e-workshop/cilc2022
+    remark: |
+        ...
 "Össznyelvész 2021":
     begin: 2021-12-17
     end: 2021-12-18
