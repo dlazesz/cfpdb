@@ -23,6 +23,7 @@ print("Syntax OK!")
     location: Bergamo, Italy
     submission: 2021-12-31
     notification: 2022-03-01
+    camera-ready: 2022-03-01
     url: https://dllcs.unibg.it/it/seminari-e-convegni/convegni-e-workshop/cilc2022
     remark: |
         ...
@@ -31,6 +32,8 @@ print("Syntax OK!")
     end: 2021-12-18
     location: Budapest, Hungary
     submission: 2021-11-07
+    notification: 2021-11-07
+    camera-ready: 2021-11-07
     url: https://ossznyelvesz.elte.hu/
     remark: |
         ...
