@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"2nd International Conference on Digital Research Data and Human Sciences (DRDHum2022)":
+    begin: 2022-12-01
+    end: 2022-12-03
+    location: Jyväskylä, Finland
+    submission: 2021-02-28
+    notification: 2022-03-15
+    camera-ready: 2022-03-15
+    url: https://www.jyu.fi/en/congress/drdhum2022
+    remark: |
+        ...
+
 "CILC 2022":
     begin: 2022-05-26
     end: 2022-05-28
@@ -27,6 +38,7 @@ print("Syntax OK!")
     url: https://dllcs.unibg.it/it/seminari-e-convegni/convegni-e-workshop/cilc2022
     remark: |
         ...
+
 "Össznyelvész 2021":
     begin: 2021-12-17
     end: 2021-12-18
@@ -37,6 +49,7 @@ print("Syntax OK!")
     url: https://ossznyelvesz.elte.hu/
     remark: |
         ...
+
 "ACL 2022":
     begin: 2022-05-22
     end:   2022-05-27
@@ -47,6 +60,7 @@ print("Syntax OK!")
     url: https://www.2022.aclweb.org/
     remark: |
         ...
+
 "MSZNY 2022":
     begin: 2022-01-27
     end:   2022-01-28
