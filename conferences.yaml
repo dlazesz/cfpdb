@@ -17,6 +17,39 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"18th Workshop on Multiword Expressions":
+    begin: 2022-06-25
+    end: 2022-06-25
+    location: Marseille, France
+    submission: 2022-04-08
+    notification: 2022-05-03
+    camera-ready: 2022-05-23
+    url: https://multiword.org/mwe2022/
+    remark: |
+        ...
+
+"COLING 2022":
+    begin: 2022-10-12
+    end: 2022-10-17
+    location: Gyeongju, Korea
+    submission: 2022-05-17
+    notification: 2022-08-15
+    camera-ready: 2022-09-15
+    url: http://coling2022.org/index
+    remark: |
+        ...
+
+"10th Workshop on the Challenges in the Management of Large Corpora":
+    begin: 2022-06-20
+    end: 2022-06-20
+    location: Marseille, France
+    submission: 2022-04-08
+    notification: 2022-05-03
+    camera-ready: 2022-05-23
+    url: http://corpora.ids-mannheim.de/cmlc-2022.html
+    remark: |
+        ...
+
 "2nd International Conference on Digital Research Data and Human Sciences (DRDHum2022)":
     begin: 2022-12-01
     end: 2022-12-03
