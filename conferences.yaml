@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"The 6th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature (LaTeCH-CLfL-2022)":
+    begin: 2022-10-12
+    end: 2022-10-17
+    location: Republic of Korea, Gyeongju
+    submission: 2022-07-11
+    notification: 2022-08-22
+    camera-ready: 2022-09-05
+    url: https://www.aclweb.org/portal/content/6th-joint-sighum-workshop-computational-linguistics-cultural-heritage-social-sciences
+    remark: |
+        ...
+
 "18th Workshop on Multiword Expressions":
     begin: 2022-06-25
     end: 2022-06-25
