@@ -38,12 +38,12 @@ def load_yaml(cfg_file):
         lines = lines[start:end]
 
     try:
-        yaml.load(''.join(lines))
+        yaml.safe_load(''.join(lines))
     except yaml.YAMLError as exc:
         print(exc, file=sys.stderr)
         exit(1)
 
-    return yaml.load(''.join(lines))
+    return yaml.safe_load(''.join(lines))
 
 
 def correct_date(value, far_future_date):

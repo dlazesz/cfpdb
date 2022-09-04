@@ -5,7 +5,7 @@ python3 -c '
 import yaml
 import sys
 try:
-    yaml.load(sys.stdin)
+    yaml.safe_load(sys.stdin)
 except yaml.YAMLError as exc:
     if hasattr(exc, 'problem_mark'):
         shifting = 17  # Line no. where "%YAML 1.1" is! (Numbering starts from 0!)
