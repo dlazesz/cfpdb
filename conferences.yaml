@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"10th Language and Technology Conference (LTC 2023)":
+    begin: 2023-04-21
+    end:   2023-04-23
+    location: Poznań, Poland
+    submission:   2022-10-22
+    notification: 2022-11-30
+    camera-ready: 2022-12-28
+    url: http://ltc.amu.edu.pl/
+    remark: |
+        ...
+
 "NLP4DH 2022":
     begin: 2022-10-20
     end:   2022-10-20
