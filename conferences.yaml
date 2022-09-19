@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"Corpus Linguistics 2023":
+    begin: 2023-07-02
+    end:   2023-07-06
+    location: Lancaster, UK
+    submission:   2022-10-xx
+    notification: 2022-xx-xx
+    camera-ready: 2023-xx-xx
+    url: https://wp.lancs.ac.uk/cl2023
+    remark: |
+        ...
+
 "MSZNY 2023":
     begin: 2023-01-26
     end:   2023-01-27
