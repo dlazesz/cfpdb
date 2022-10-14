@@ -51,8 +51,8 @@ print("Syntax OK!")
         ...
 
 "NLP4DH 2022":
-    begin: 2022-10-20
-    end:   2022-10-20
+    begin: 2022-11-20
+    end:   2022-11-20
     location: online
     submission:   2022-08-25
     notification: 2022-09-25
