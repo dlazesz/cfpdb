@@ -43,9 +43,9 @@ print("Syntax OK!")
     begin: 2023-04-21
     end:   2023-04-23
     location: Poznań, Poland
-    submission:   2022-11-14
-    notification: 2022-12-14
-    camera-ready: 2023-01-09
+    submission:   2022-12-12
+    notification: 2023-01-07
+    camera-ready: 2023-01-16
     url: http://ltc.amu.edu.pl/
     remark: |
         ...
