@@ -21,7 +21,7 @@ The _iCalendar_ format is located at: https://raw.githubusercontent.com/dlazesz/
 
 ### Using the _iCalendar_ file with _Android_
 
-1) Install [ICSX5 (formely ICSDroid)](https://icsx5.bitfire.at/) from [Play store](https://play.google.com/store/apps/details?id=at.bitfire.icsdroid&hl=en_US), [YALP store](https://f-droid.org/en/packages/com.github.yeriomin.yalpstore/) or [F-droid](https://f-droid.org/en/packages/at.bitfire.icsdroid/)
+1) Install [ICSX5](https://icsx5.bitfire.at/) from [Play store](https://play.google.com/store/apps/details?id=at.bitfire.icsdroid&hl=en_US), [Aurora store](https://f-droid.org/en/packages/com.aurora.store/) or [F-droid](https://f-droid.org/en/packages/at.bitfire.icsdroid/)
 2) Add the URL of the provided ics file (see above)
 3) Set name and color
 4) Set update frequency if needed 
@@ -32,13 +32,17 @@ The _iCalendar_ format is located at: https://raw.githubusercontent.com/dlazesz/
 2. Set [the proper github repository name (the SSH variant of the remote url)](https://help.github.com/articles/which-remote-url-should-i-use/) in: [`update_cfpdb_on_github.py`](https://github.com/dlazesz/cfpdb/blob/master/update_cfpdb_on_github.py#L22)
 3. Setup a scheduled task to run the update:
 
-    - Run the program in [`cron`](https://www.raspberrypi.org/documentation/linux/usage/cron.md): `HOME=$HOME $HOME/cfpbd/run_update_in_venv.py >> $HOME/cfpbd/update.log 2>&1`
-    - Run the program in `virtualenv`: `run_update_in_venv.py`
-    - Run the program manually and push the changes: `update_cfpdb_on_github.py`
-    - Run the program manually to see the changes locally: `generate_html.py`
-    - Run the program on Heroku: `clock.py`
+    - Set the ssh config (see [.ssh/config](.ssh/config))
+    - Create a virtualenv and install the dependencies: `virtualenv venv && ./venv/bin/pip install -r requirements.txt`
+    - Type `crontab -e` to create a scheduled task.
+    - Type the following to run at 1:00 AM every day (see [crontab.guru](https://crontab.guru) for examples): `0 1 * * * HOME=$HOME $HOME/cfpdb/venv/bin/python $HOME/cfpdb/update_cfpdb_on_github.py >> $HOME/cfpdb/update.log 2>&1`
+    - (Optional) Run the program manually and push the changes: `update_cfpdb_on_github.py`
+    - (Optional) Run the program manually to see the changes locally: `generate_html.py`
+    - (Optional) Run the program on Heroku: `clock.py`
 
 ## Install to Heroku
+
+__WARNING: Heroku free tier is discontinued.__
 
   - Sign up
   - Download and install Heroku CLI

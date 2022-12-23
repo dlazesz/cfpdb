@@ -113,5 +113,6 @@ venv.bak/
 # test
 inputfile
 
-# egyeb...
+# Project specific...
 conf.*.xml
+private_key
