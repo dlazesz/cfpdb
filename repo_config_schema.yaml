@@ -1,0 +1,4 @@
+work_dir: str(min=1, required=True, none=False)
+repo_url: str(min=1, required=True, none=False,starts_with='https://', ends_with='.git', ignore_case=True)
+username: str(min=1, required=True, none=False)
+token: str(min=1, required=True, none=False)

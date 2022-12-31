@@ -28,17 +28,17 @@ The _iCalendar_ format is located at: https://raw.githubusercontent.com/dlazesz/
 
 ## Setup
 
-1. [Setup the key-based access to github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) and copy [your private key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) to the `private_key` file
-2. Set [the proper github repository name (the SSH variant of the remote url)](https://help.github.com/articles/which-remote-url-should-i-use/) in: [`update_cfpdb_on_github.py`](https://github.com/dlazesz/cfpdb/blob/master/update_cfpdb_on_github.py#L22)
+1. [Setup the Personal Access Token-based access to Github](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) enabling ```repo``` scopes (shortcut: https://github.com/settings/tokens/new watch out for expiration time!)
+2. Set [the proper github repository name (the HTTP variant of the remote url)](https://help.github.com/articles/which-remote-url-should-i-use/), github username and the newly created token in `repo_config.yaml` ([see example](repo_config_example.yaml))
 3. Setup a scheduled task to run the update:
 
-    - Set the ssh config (see [.ssh/config](.ssh/config))
     - Create a virtualenv and install the dependencies: `virtualenv venv && ./venv/bin/pip install -r requirements.txt`
     - Type `crontab -e` to create a scheduled task.
     - Type the following to run at 1:00 AM every day (see [crontab.guru](https://crontab.guru) for examples): `0 1 * * * HOME=$HOME $HOME/cfpdb/venv/bin/python $HOME/cfpdb/update_cfpdb_on_github.py >> $HOME/cfpdb/update.log 2>&1`
-    - (Optional) Run the program manually and push the changes: `update_cfpdb_on_github.py`
-    - (Optional) Run the program manually to see the changes locally: `generate_html.py`
-    - (Optional) Run the program on Heroku: `clock.py`
+    - (Optional) Run the program manually and push the changes: [`update_cfpdb_on_github.py`](update_cfpdb_on_github.py)
+    - (Optional) Run the program manually to see the changes locally: [`generate_calendar.py`](generate_calendar.py)
+    - (Optional) Run the program on Heroku: [`clock.py`](clock.py)
+    - (Optional) Run the program on [Deta Cloud](https://www.deta.sh/): [`deta_main.py`](deta_main.py)
 
 ## Install to Heroku
 

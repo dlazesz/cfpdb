@@ -1,4 +1,5 @@
-gitpython
+dulwich
 pyyaml
 ics
 APScheduler
+yamale
