@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"TSD 2023":
+    begin: 2023-09-04
+    end:   2023-09-07
+    location: Plzeň, Czech Republic
+    submission:   2023-04-23
+    notification: 2023-05-22
+    camera-ready: 2023-06-04
+    url: https://www.kiv.zcu.cz/tsd2023/index.php
+    remark: |
+        ...
+
 "Corpus Linguistics 2023":
     begin: 2023-07-02
     end:   2023-07-06
