@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"MWE 2023":
+    begin: 2023-05-02
+    end:   2023-05-02
+    location: Dubrovnik, Croatia
+    submission:   2023-02-13
+    notification: 2023-xx-xx
+    camera-ready: 2023-xx-xx
+    url: https://multiword.org/mwe2023
+    remark: |
+        ...
+
 "TSD 2023":
     begin: 2023-09-04
     end:   2023-09-07
