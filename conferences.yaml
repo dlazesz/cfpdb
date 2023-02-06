@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"LxGr 2023":
+    begin: 2023-07-07
+    end:   2023-07-08
+    location: online
+    submission:   2023-03-31
+    notification: 2023-xx-xx
+    camera-ready: 2023-xx-xx
+    url: https://sites.edgehill.ac.uk/lxgr/lxgr2023
+    remark: |
+        ...
+
 "MWE 2023":
     begin: 2023-05-02
     end:   2023-05-02
