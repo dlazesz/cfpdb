@@ -17,7 +17,62 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
-"LxGr 2023":
+"EACL 2023":
+    begin: 2023-05-03
+    end:   2023-05-05
+    location: Dubrovnik, Croatia
+    submission:   2022-10-20
+    notification: 2023-01-20
+    camera-ready: 2023-02-10
+    url: https://2023.eacl.org
+    remark: |
+        ...
+
+"ACL 2023":
+    begin: 2023-07-09
+    end:   2023-07-14
+    location: Toronto, Canada
+    submission:   2023-01-13
+    notification: 2023-05-01
+    camera-ready: 2023-05-22
+    url: https://2023.aclweb.org
+    remark: |
+        ...
+
+"Linking Lexicographic and Language Learning Resources -- 4LR 2023":
+    begin: 2023-09-13
+    end:   2023-09-13
+    location: Vienna, Austria
+    submission:   2023-05-19
+    notification: 2023-05-29
+    camera-ready: 2023-06-30
+    url: https://lexicala.com/4lr
+    remark: |
+        ...
+
+"Language, Data and Knowledge -- LDK 2023":
+    begin: 2023-09-14
+    end:   2023-09-15
+    location: online
+    submission:   2023-03-10
+    notification: 2023-04-28
+    camera-ready: 2023-05-26
+    url: http://2023.ldk-conf.org
+    remark: |
+        ...
+
+"eLex 2023":
+    begin: 2023-06-27
+    end:   2023-06-29
+    location: online
+    submission:   2023-02-06
+    notification: 2023-02-22
+    camera-ready: 2023-xx-xx
+    url: https://elex.link/elex2023
+    remark: |
+        ...
+
+"Corpus Approaches to Lexicogrammar -- LxGr 2023":
     begin: 2023-07-07
     end:   2023-07-08
     location: online
