@@ -84,12 +84,12 @@ print("Syntax OK!")
         ...
 
 "MWE 2023":
-    begin: 2023-05-02
-    end:   2023-05-02
+    begin: 2023-05-05
+    end:   2023-05-06
     location: Dubrovnik, Croatia
-    submission:   2023-02-13
-    notification: 2023-xx-xx
-    camera-ready: 2023-xx-xx
+    submission:   2023-02-20
+    notification: 2023-03-13
+    camera-ready: 2023-03-27
     url: https://multiword.org/mwe2023
     remark: |
         ...
