@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"14th Tbilisi Symposium on Logic, Language and Computation (TbiLLC 2023)":
+    begin: 2023-09-18
+    end:   2023-09-22
+    location: Tibilisi, Georgia
+    submission:   2023-03-17
+    notification: 2023-05-24
+    camera-ready: 2023-06-26
+    url: https://events.illc.uva.nl/Tbilisi/Tbilisi2023
+    remark: |
+        ...
+
 "EACL 2023":
     begin: 2023-05-03
     end:   2023-05-05
