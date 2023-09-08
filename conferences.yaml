@@ -18,12 +18,12 @@ print("Syntax OK!")
 %YAML 1.1
 ---
 "NLP4DH 2023":
-    begin: 2022-12-01
-    end:   2022-12-03
+    begin: 2023-12-01
+    end:   2023-12-03
     location: Tokyo, Japan
-    submission:   2022-10-01
-    notification: 2022-11-03
-    camera-ready: 2022-11-17
+    submission:   2023-10-01
+    notification: 2023-11-03
+    camera-ready: 2023-11-17
     url: https://rootroo.com/en/joint-nlp4dh-iwclul-2023/
     remark: |
         ...
