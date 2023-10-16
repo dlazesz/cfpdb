@@ -17,6 +17,28 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"EURALEX 2024":
+    begin: 2024-10-08
+    end:   2024-10-12
+    location: Cavtat, Croatia
+    submission:   2024-02-01
+    notification: 2024-04-05
+    camera-ready: 2024-xx-xx
+    url: https://euralex.jezik.hr
+    remark: |
+        ...
+
+"13th International Conference on Construction Grammar (ICCG13)":
+    begin: 2024-08-26
+    end:   2024-08-28
+    location: Göteborg, Sweden
+    submission:   2024-01-17
+    notification: 2024-03-xx
+    camera-ready: 2024-xx-xx
+    url: https://www.gu.se/en/swedish/iccg13
+    remark: |
+        ...
+
 "MSZNY 2024":
     begin: 2024-01-25
     end:   2024-01-26
