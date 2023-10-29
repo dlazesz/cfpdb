@@ -23,7 +23,7 @@ print("Syntax OK!")
     location: Cavtat, Croatia
     submission:   2024-02-01
     notification: 2024-04-05
-    camera-ready: 2024-xx-xx
+    camera-ready: 2024-05-26
     url: https://euralex.jezik.hr
     remark: |
         ...
@@ -33,8 +33,8 @@ print("Syntax OK!")
     end:   2024-08-28
     location: Göteborg, Sweden
     submission:   2024-01-17
-    notification: 2024-03-xx
-    camera-ready: 2024-xx-xx
+    notification: 2024-03-01
+    camera-ready: 2024-03-01
     url: https://www.gu.se/en/swedish/iccg13
     remark: |
         ...
