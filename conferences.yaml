@@ -17,6 +17,7 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+       
 "EURALEX 2024":
     begin: 2024-10-08
     end:   2024-10-12
@@ -38,6 +39,17 @@ print("Syntax OK!")
     url: https://www.gu.se/en/swedish/iccg13
     remark: |
         ...
+
+"The 18th Linguistic Annotation Workshop":
+    begin: 2024-03-21
+    end:   2024-03-22
+    location: St. Julian, Malta
+    submission:   2023-11-18
+    notification: 2024-01-20
+    camera-ready: 2024-01-30
+    url: https://sigann.github.io/LAW-XVIII-2024/cfp.html
+    remark: |
+         ...
 
 "MSZNY 2024":
     begin: 2024-01-25
