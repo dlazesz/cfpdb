@@ -17,7 +17,28 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
-       
+"CILC 2024":
+    begin: 2024-05-22
+    end: 2024-05-24
+    location: Las Palmas de Gran Canaria, Spain
+    submission: 2024-01-15
+    notification: 2024-02-15
+    camera-ready: 2022-02-15
+    url: https://www.fabula.org/actualites/116735/15th-international-corpus-linguistics-conference-cilc2024-corpus-linguistics-digital-discourse.html
+    remark: |
+        ...
+
+"TSD 2024":
+    begin: 2024-09-02
+    end:   2024-09-06
+    location: Brno, Czech Republic
+    submission:   2024-04-10
+    notification: 2024-06-15
+    camera-ready: 2024-06-15
+    url: https://www.tsdconference.org/tsd2024/
+    remark: |
+        ...
+
 "EURALEX 2024":
     begin: 2024-10-08
     end:   2024-10-12
