@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"25. Pszicholingvisztikai Nyári Egyetem (2024)":
+    begin: 2024-05-25
+    end:   2024-05-26
+    location: Balatonalmádi
+    submission:   2024-02-10
+    notification: 2024-02-29
+    camera-ready: 2024-02-29
+    url: https://pnye.mftk.uni-pannon.hu/
+    remark: |
+        ...
+
 "CILC 2024":
     begin: 2024-05-22
     end: 2024-05-24
