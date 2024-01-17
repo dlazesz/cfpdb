@@ -17,6 +17,28 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"MWE-UD 2024":
+    begin: 2024-05-25
+    end:   2024-05-25
+    location: Torino, Italy
+    submission:   2024-02-25
+    notification: 2024-04-01
+    camera-ready: 2024-04-08
+    url: https://multiword.org/mweud2024
+    remark: |
+        ...
+
+"CogALex 2024":
+    begin: 2024-05-20
+    end:   2024-05-20
+    location: Torino, Italy
+    submission:   2024-02-23
+    notification: 2024-03-20
+    camera-ready: 2024-03-29
+    url: https://sites.google.com/view/cogalex-viii-2024
+    remark: |
+        ...
+
 "25. Pszicholingvisztikai Nyári Egyetem (2024)":
     begin: 2024-05-25
     end:   2024-05-26
