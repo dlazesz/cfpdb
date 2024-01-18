@@ -17,6 +17,16 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"dict2ccn WS":
+    begin: 2024-04-19
+    end:   2024-04-19
+    location: Tallinn, Estonia
+    submission:   2024-03-10
+    notification: 2024-03-24
+    url: https://portaal.eki.ee/component/content/article/101-projektid/4507-2023-11-23-09-19-55.html
+    remark: |
+        ...
+
 "MWE-UD 2024":
     begin: 2024-05-25
     end:   2024-05-25
