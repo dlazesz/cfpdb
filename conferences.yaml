@@ -17,6 +17,16 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"Computational Linguistics in the Netherlands (CLIN 34)":
+    begin: 2024-08-30
+    end:   2024-08-30
+    location: Leiden, Hollandia
+    submission:   2024-02-XX
+    notification: 2024-03-XX
+    url: https://www.let.rug.nl/vannoord/Clin/
+    remark: |
+        ...
+
 "dict2ccn WS":
     begin: 2024-04-19
     end:   2024-04-19
