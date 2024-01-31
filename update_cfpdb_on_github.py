@@ -7,14 +7,16 @@ import shutil
 from pathlib import Path
 from datetime import date
 
+from yaml import safe_dump as yaml_safe_dump
 from yamale import make_schema, make_data, validate, YamaleError
 from dulwich import porcelain
 
-def load_and_validate(schema_fname, fname, strict=True):
+def load_and_validate(schema_fname, data_param, strict=True, data_is_file=True):
     config_schema = make_schema(schema_fname)
-    with open(fname, encoding='UTF-8') as data_fh:
-        data_content = data_fh.read()
-    data = make_data(content=data_content)
+    if data_is_file:
+        data = make_data(data_param)
+    else:
+        data = make_data(content=data_param)
     try:
         validate(config_schema, data, strict)
     except YamaleError as e:
@@ -70,6 +72,18 @@ def run_update(work_dir, repo_url, username, token):
 
 
 if __name__ == '__main__':
-    repo_config = load_and_validate(Path(__file__).parent / 'repo_config_schema.yaml',
-                                    Path(__file__).parent / 'repo_config.yaml')
+    config_file = Path(__file__).parent / 'repo_config.yaml'
+    if config_file.exists():
+        repo_config = load_and_validate(Path(__file__).parent / 'repo_config_schema.yaml',
+                                        config_file)
+    else:
+        # Read environment variables to dict
+        config = {'work_dir': os.environ.get('work_dir', ''),
+                  'repo_url': os.environ.get('repo_url', ''),
+                  'username': os.environ.get('username', ''),
+                  'token': os.environ.get('token', '')}
+        config_yaml_str = yaml_safe_dump(config)
+        repo_config = load_and_validate(Path(__file__).parent / 'repo_config_schema.yaml',
+                                        config_yaml_str, data_is_file=False)
+
     run_update(repo_config['work_dir'], repo_config['repo_url'], repo_config['username'], repo_config['token'])
