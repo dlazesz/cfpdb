@@ -34,6 +34,7 @@ print("Syntax OK!")
     location: Leiden, Hollandia
     submission:   2024-02-XX
     notification: 2024-03-XX
+    camera-ready: 2024-03-XX
     url: https://www.let.rug.nl/vannoord/Clin/
     remark: |
         ...
@@ -44,6 +45,7 @@ print("Syntax OK!")
     location: Tallinn, Estonia
     submission:   2024-03-10
     notification: 2024-03-24
+    camera-ready: 2024-03-24
     url: https://portaal.eki.ee/component/content/article/101-projektid/4507-2023-11-23-09-19-55.html
     remark: |
         ...
