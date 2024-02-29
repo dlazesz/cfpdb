@@ -14,8 +14,6 @@ from ics import Calendar, Event
 # Secondary sorting key order...
 event_order = ('submission', 'notification', 'camera-ready', 'begin', 'end')
 events = {event: i for i, event in enumerate(event_order)}
-far_past = date.today().replace(year=date.today().year-10)
-far_future = date.today().replace(year=date.today().year+10)
 
 
 def load_yaml(cfg_file):
@@ -52,7 +50,7 @@ def correct_date(value, far_future_date):
     elif not isinstance(value, date):
         value = value.split('-')
         if len(value) != 3:  # YYYY-MM-DD
-            value = far_future_date  # Totally wrong.
+            value = far_future_date  # Totally wrong
         else:
             value_out = []
             for v in value:  # Fields converted to integer or defaults to 1 (except year which defaults to this_year+10)
@@ -62,7 +60,7 @@ def correct_date(value, far_future_date):
                     v = -1
                 value_out.append(v)
             if value_out[0] == -1:
-                value_out[0] = far_future_date.year  # Totally wrong.
+                value_out[0] = far_future_date.year  # Totally wrong
             if value_out[1] == -1:
                 value_out[1] = 12  # Last month of the year
             if value_out[2] == -1:
@@ -77,7 +75,7 @@ def sort_confs(confs):
     fields = [field for field, _ in sorted(events.items(), key=itemgetter(1), reverse=True)]  # Go backwards
 
     for name, data in confs.items():
-        curr_last_date = correct_date(data.get(event_order[-1], ''), far_future)
+        curr_last_date = correct_date(data.get(event_order[-1], ''), date.max)
         sort_date, sort_field = curr_last_date, event_order[-1]
         for field in fields[1:]:  # The last date is the default
             field_val = correct_date(data.get(field, ''), curr_last_date)
@@ -107,7 +105,7 @@ def format_alert(sort_date, due_date, color, alert):
         formatted_field = str(due_date)
     else:
         formatted_field = ''
-    if alert and sort_date.startswith(str(correct_date(due_date, far_future))):
+    if alert and sort_date.startswith(str(correct_date(due_date, date.max))):
         formatted_field = '<span style="background: {0}">{1}</span>'.format(color, due_date)
     return formatted_field
 
@@ -181,9 +179,9 @@ def print_html(confs, out_stream=sys.stdout):
           sep='\n', file=out_stream)
 
 
-def add_event(cal, name, location, url, prefix, field_name, data, far_future_date):
-    due_date = correct_date(data.get(field_name, ''), far_future_date)
-    if due_date < far_future_date:
+def add_event(cal, name, location, url, prefix, field_name, data):
+    due_date = correct_date(data.get(field_name, ''), date.max)
+    if due_date < date.max:
         e = Event(name='{0}: {1}'.format(prefix, name), begin=datetime.combine(due_date, datetime.min.time()),
                   end=datetime.combine(due_date, datetime.min.time()), location=location, url=url)
         e.make_all_day()
@@ -200,13 +198,13 @@ def create_ics(confs, stream):
     """
 
     for name, data in confs.items():
-        begin = correct_date(data.get('begin', ''), far_future)
-        end = correct_date(data.get('end', ''), far_future)
+        begin = correct_date(data.get('begin', ''), date.max)
+        end = correct_date(data.get('end', ''), date.max)
         location = data['location']
         url = data['url']
 
         for field_name in ('submission', 'notification', 'camera-ready'):
-            add_event(cal, name, location, url, field_name.upper(), field_name, data, far_future)
+            add_event(cal, name, location, url, field_name.upper(), field_name, data)
 
         if begin is not None:
             if end < begin:
