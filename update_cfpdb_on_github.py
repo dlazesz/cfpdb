@@ -35,6 +35,7 @@ def run_update(work_dir, repo_url, username, token):
     shutil.rmtree(abs_work_dir, ignore_errors=True)
 
     # Clone master: depth=1 and no-single-branch together as parameter to reduce bandwidth usage...
+    # (dulwich currently does not support no-single-branch. See pull() and update_head() later)
     repo = porcelain.clone(repo_url, abs_work_dir, depth=1, branch='conferences')
 
     # Go into the git working dir and also add it to modulepath!
@@ -56,15 +57,15 @@ def run_update(work_dir, repo_url, username, token):
     os.rename('cfps.html', 'index.html')
     os.rename('cfps.ics', 'conferences.ics')
 
-    # add result
+    # Add result
     porcelain.add(repo, ['index.html', 'conferences.ics'])
 
-    # The ics file generation is not reproducible so it does not count in the diff!
+    # The .ics file generation is not reproducible so it does not count in the diff!
     if len(porcelain.status(repo, untracked_files='no')[0]['modify']) > 1:
-        # commit result
+        # Commit result
         author = 'CFP Updater Bot <this.bot.h@s.no.email>'
         porcelain.commit(repo, f'Update on {date.today().isoformat()}', author=author, committer=author)
-        # push result
+        # Push result
         porcelain.push(repo, repo_url, 'gh-pages', username=username, password=token)
         print('Pushed!')
     else:
