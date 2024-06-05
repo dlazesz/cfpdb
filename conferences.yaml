@@ -17,6 +17,28 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"NoDaLiDa/Baltic-HLT 2025":
+    begin: 2025-03-02
+    end:   2025-03-05
+    location: Tallinn, Estonia
+    submission:   2024-10-21
+    notification: 2024-12-09
+    camera-ready: 2025-01-13
+    url: https://www.nodalida-bhlt2025.eu/important-dates
+    remark: |
+        ...
+
+"Language Technologies & Digital Humanities Conference 2024":
+    begin: 2024-09-18
+    end:   2024-09-20
+    location: Ljubljana, Slovenia
+    submission:   2024-05-31
+    notification: 2024-07-05
+    camera-ready: 2024-08-23
+    url: https://www.sdjt.si/wp/jtdh-2024-en/#dates
+    remark: |
+        ...
+
 "CLARIN Annual Conference 2024":
     begin: 2024-10-15
     end:   2024-10-17
