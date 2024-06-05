@@ -17,6 +17,28 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"he 4th International Conference on Natural Language Processing for Digital Humanities (NLP4DH 2024)":
+    begin: 2024-11-15
+    end:   2024-11-16
+    location: Helsinki, Finland
+    submission:   2024-09-01
+    notification: 2024-09-22
+    camera-ready: 2024-10-04
+    url: https://www.nlp4dh.com/nlp4dh-2024
+    remark: |
+        ...
+
+"The 9th International Workshop on Computational Linguistics for Uralic Languages IWCLUL 2024":
+    begin: 2024-11-28
+    end:   2024-11-29
+    location: Helsinki, Finland
+    submission:   2024-10-20
+    notification: 2024-11-03
+    camera-ready: 2024-11-10
+    url: https://acl-sigur.github.io/iwclul2024.html
+    remark: |
+        ...
+
 "CLiC-it 2024":
     begin: 2024-12-04
     end:   2024-12-06
