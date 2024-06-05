@@ -17,7 +17,18 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
-"he 4th International Conference on Natural Language Processing for Digital Humanities (NLP4DH 2024)":
+"11th meeting of Linguistics Beyond And Within (LingBaW 2024)":
+    begin: 2024-10-17
+    end:   2024-10-18
+    location: Helsinki, Finland
+    submission:   2024-06-15
+    notification: 2024-07-15
+    camera-ready: 2024-07-15
+    url: https://lingbaw.webclass.co/
+    remark: |
+        ...
+
+"The 4th International Conference on Natural Language Processing for Digital Humanities (NLP4DH 2024)":
     begin: 2024-11-15
     end:   2024-11-16
     location: Helsinki, Finland
