@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"11th Language and Technology Conference (LTC 2025)":
+    begin: 2025-12-05
+    end:   2025-12-07
+    location: Poznań, Poland
+    submission:   2025-09-01
+    notification: 2025-10-23
+    camera-ready: 2025-11-15
+    url: https://ltc.amu.edu.pl/
+    remark: |
+        ...
+
 "The Second International Workshop on Construction Grammars and NLP (CxGs+NLP 2025)":
     begin: 2025-09-22
     end:   2025-09-25
