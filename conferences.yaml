@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"MSZNY 2026":
+    begin: 2026-01-29
+    end:   2026-01-30
+    location: Szeged, Hungary
+    submission:   2025-11-21
+    notification: 2025-12-19
+    camera-ready: 2026-01-12
+    url: https://rgai.inf.u-szeged.hu/mszny2026
+    remark: |
+        ...
+
 "11th Language and Technology Conference (LTC 2025)":
     begin: 2025-12-05
     end:   2025-12-07
