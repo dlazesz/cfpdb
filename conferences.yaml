@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"10th International Workshop on Computational Linguistics for Uralic Languages (IWCLUL 2026)":
+    begin: 2026-12-09
+    end:   2026-12-11
+    location: Munich, Germany
+    submission:   2026-10-11
+    notification: 2026-11-02
+    camera-ready: 2026-11-15
+    url: https://acl-sigur.github.io/iwclul2026.html
+    remark: |
+        ...
+
 "MSZNY 2026":
     begin: 2026-01-29
     end:   2026-01-30
