@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"MSZNY 2027":
+    begin: 2027-01-28
+    end:   2027-01-29
+    location: Szeged, Hungary
+    submission:   2026-11-20
+    notification: 2026-12-18
+    camera-ready: 2027-01-11
+    url: http://mszny.inf.u-szeged.hu/
+    remark: |
+        ...
+
 "10th International Workshop on Computational Linguistics for Uralic Languages (IWCLUL 2026)":
     begin: 2026-12-09
     end:   2026-12-11
