@@ -33,8 +33,8 @@ print("Syntax OK!")
     end:   2027-08-28
     location: Kosice, Slovakia
     submission:   2027-01-15
-    notification: ??
-    camera-ready: ??
+    notification: 2027-??-??
+    camera-ready: 2027-??-??
     url: https://societaslinguistica.eu/sle2027
     remark: |
         ...
@@ -44,8 +44,8 @@ print("Syntax OK!")
     end:   2027-08-22
     location: Kyoto, Japan
     submission:   2027-01-04
-    notification: ??
-    camera-ready: ??
+    notification: 2027-??-??
+    camera-ready: 2027-??-??
     url: https://2027.aclweb.org
     remark: |
         ...
@@ -55,8 +55,8 @@ print("Syntax OK!")
     end:   2027-07-17
     location: Innsbruck, Austria
     submission:   2026-11-15
-    notification: ??
-    camera-ready: ??
+    notification: 2027-??-??
+    camera-ready: 2027-??-??
     url: https://www.uibk.ac.at/en/congress/europhras-2027
     remark: |
         ...
@@ -78,7 +78,7 @@ print("Syntax OK!")
     location: Frankfurt, Germany
     submission:   2026-10-31
     notification: 2026-12-15
-    camera-ready: --
+    camera-ready: 2027-??-??
     url: https://www.uibk.ac.at/en/congress/europhras-2027
     remark: |
         ...
