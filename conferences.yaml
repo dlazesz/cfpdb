@@ -17,6 +17,94 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"eLex 2027":
+    begin: 2027-11-17
+    end:   2027-11-19
+    location: Bolzano, Italy
+    submission:   2027-04-??
+    notification: 2027-07-??
+    camera-ready: 2027-08-??
+    url: https://elex.link/elex2027
+    remark: |
+        ...
+
+"SLE 2027":
+    begin: 2027-08-25
+    end:   2027-08-28
+    location: Kosice, Slovakia
+    submission:   2027-01-15
+    notification: ??
+    camera-ready: ??
+    url: https://societaslinguistica.eu/sle2027
+    remark: |
+        ...
+
+"ACL 2027":
+    begin: 2027-08-17
+    end:   2027-08-22
+    location: Kyoto, Japan
+    submission:   2027-01-04
+    notification: ??
+    camera-ready: ??
+    url: https://2027.aclweb.org
+    remark: |
+        ...
+
+"EUROPHRAS 2027":
+    begin: 2027-07-14
+    end:   2027-07-17
+    location: Innsbruck, Austria
+    submission:   2026-11-15
+    notification: ??
+    camera-ready: ??
+    url: https://www.uibk.ac.at/en/congress/europhras-2027
+    remark: |
+        ...
+
+"NoDaLiDa":
+    begin: 2027-05-25
+    end:   2027-05-28
+    location: Copenhagen, Denmark
+    submission:   2027-01-18
+    notification: 2027-03-08
+    camera-ready: 2027-04-05
+    url: https://eventsignup.ku.dk/nodalida-27
+    remark: |
+        ...
+
+"PhraConRep 2027":
+    begin: 2027-03-22
+    end:   2027-03-24
+    location: Frankfurt, Germany
+    submission:   2026-10-31
+    notification: 2026-12-15
+    camera-ready: --
+    url: https://www.uibk.ac.at/en/congress/europhras-2027
+    remark: |
+        ...
+
+"EACL 2027":
+    begin: 2027-03-09
+    end:   2027-03-14
+    location: Athens, Greece
+    submission:   2026-08-03
+    notification: 2026-11-12
+    camera-ready: 2026-11-26
+    url: https://2027.eacl.org
+    remark: |
+        ...
+
+"MWE 2027":
+    begin: 2027-03-??
+    end:   2027-03-??
+    location: Athens, Greece
+    submission:   2026-12-01
+    notification: 2027-01-??
+    camera-ready: 2027-01-19
+    url: https://multiword.org/mwe2027
+    remark: |
+        ...
+
 "MSZNY 2027":
     begin: 2027-01-28
     end:   2027-01-29
@@ -28,7 +116,7 @@ print("Syntax OK!")
     remark: |
         ...
 
-"10th International Workshop on Computational Linguistics for Uralic Languages (IWCLUL 2026)":
+"11th International Workshop on Computational Linguistics for Uralic Languages (IWCLUL 2026)":
     begin: 2026-12-09
     end:   2026-12-11
     location: Munich, Germany
@@ -36,6 +124,17 @@ print("Syntax OK!")
     notification: 2026-11-02
     camera-ready: 2026-11-15
     url: https://acl-sigur.github.io/iwclul2026.html
+    remark: |
+        ...
+
+"EMNLP 2026":
+    begin: 2026-10-24
+    end:   2026-10-29
+    location: Budapest, Hungary
+    submission:   2026-05-25
+    notification: 2026-08-20
+    camera-ready: 2026-08-30
+    url: https://2026.emnlp.org
     remark: |
         ...
 
@@ -1051,7 +1150,7 @@ print("Syntax OK!")
     remark: |
         ...
 
-"eLexicography 2019":
+"eLex 2019":
     begin: 2019-10-01
     end:   2019-10-03
     location: Sintra, Portugal
@@ -1315,7 +1414,7 @@ print("Syntax OK!")
     remark: |
         ...
 
-"eLexicography 2017":
+"eLex 2017":
     begin: 2017-09-19
     end:   2017-09-21
     location: Leiden, Netherlands
