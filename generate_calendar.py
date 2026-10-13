@@ -89,7 +89,12 @@ def _sort_confs(confs):
         for field in fields[1:]:  # The last date is the default
             if field not in data:
                 raise ValueError(f'"{field}" field not present for "{name}" !')
-            field_val = _correct_date(data[field])
+            try:
+                field_val = _correct_date(data[field])
+            except ValueError:
+                print('Please check date for', name, field, file=sys.stderr)
+                print('At least a valid year is required!', file=sys.stderr)
+                exit(1)
             data['corrected_dates'][field] = field_val  # Store corrected date
 
             # The field_val is the nearest one in the future if there is any
