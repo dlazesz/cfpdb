@@ -17,6 +17,17 @@ print("Syntax OK!")
 '<<EOF
 %YAML 1.1
 ---
+"15th International Conference on Construction Grammar (ICCG15)":
+    begin: 2028-08-21
+    end:   2028-08-23
+    location: Kiel, Germany
+    submission:   2028-??-??
+    notification: 2028-??-??
+    camera-ready: 2028-??-??
+    url: https://google.com/?q=ICCG15+Kiel
+    remark: |
+        ...
+
 "eLex 2027":
     begin: 2027-11-17
     end:   2027-11-19
