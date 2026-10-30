@@ -46,9 +46,9 @@ def run_update(work_dir, repo_url, username, token):
     from generate_calendar import main as gen_html
     gen_html()
 
-    # Checkout (remote) gh-pages branch
-    porcelain.pull(repo, repo_url, refspecs='refs/heads/gh-pages')
-    porcelain.update_head(repo, 'gh-pages')
+    # Checkout (remote) gh-pages branch (a pull() would try to merge different branches)
+    porcelain.fetch(repo, repo_url, depth=1)
+    porcelain.checkout(repo, 'refs/remotes/origin/gh-pages', new_branch='gh-pages')
     # These are unnecessary because we explicitly stage files
     # porcelain.reset(repo, 'hard')
     # os.remove('conferences.yaml')
