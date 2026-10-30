@@ -11,6 +11,7 @@ from yaml import safe_dump as yaml_safe_dump
 from yamale import make_schema, make_data, validate, YamaleError
 from dulwich import porcelain
 
+
 def load_and_validate(schema_fname, data_param, strict=True, data_is_file=True):
     config_schema = make_schema(schema_fname)
     if data_is_file:
@@ -26,6 +27,7 @@ def load_and_validate(schema_fname, data_param, strict=True, data_is_file=True):
                 print('', error, sep='\t', file=sys.stderr)
         exit(1)
     return data[0][0]
+
 
 def run_update(work_dir, repo_url, username, token):
     # Compute absolute path for working dir for later use
@@ -63,7 +65,7 @@ def run_update(work_dir, repo_url, username, token):
     # The .ics file generation is not reproducible so it does not count in the diff!
     if len(porcelain.status(repo, untracked_files='no')[0]['modify']) > 1:
         # Commit result
-        author = 'CFP Updater Bot <this.bot.h@s.no.email>'
+        author = b'CFP Updater Bot <this.bot.h@s.no.email>'
         porcelain.commit(repo, f'Update on {date.today().isoformat()}', author=author, committer=author)
         # Push result
         porcelain.push(repo, repo_url, 'gh-pages', username=username, password=token)
